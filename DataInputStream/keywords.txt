@@ -1,0 +1,31 @@
+########################################################################
+# Syntax Coloring Map For DataInputStream
+########################################################################
+
+########################################################################
+# Datatypes (KEYWORD1)
+########################################################################
+
+DataInputStream	KEYWORD1
+
+########################################################################
+# Methods and Functions (KEYWORD2)
+########################################################################
+
+readByte	KEYWORD2
+readBoolean	KEYWORD2
+readChar	KEYWORD2
+readUnsignedChar	KEYWORD2
+readInt	KEYWORD2
+readUnsignedInt	KEYWORD2
+readWord	KEYWORD2
+readLong	KEYWORD2
+readUnsignedLong	KEYWORD2
+readFloat	KEYWORD2
+readDouble	KEYWORD2
+readFully	KEYWORD2
+skipBytes	KEYWORD2
+
+########################################################################
+# Constants (LITERAL1)
+########################################################################

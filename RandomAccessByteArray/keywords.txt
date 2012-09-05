@@ -1,0 +1,47 @@
+########################################################################
+# Syntax Coloring Map For RandomAccessByteArray
+########################################################################
+
+########################################################################
+# Datatypes (KEYWORD1)
+########################################################################
+
+RandomAccessByteArray	KEYWORD1
+
+########################################################################
+# Methods and Functions (KEYWORD2)
+########################################################################
+
+seek	KEYWORD2
+length	KEYWORD2
+close	KEYWORD2
+write	KEYWORD2
+writeByte	KEYWORD2
+writeBytes	KEYWORD2
+writeBoolean	KEYWORD2
+writeChar	KEYWORD2
+writeUnsignedChar	KEYWORD2
+writeInt	KEYWORD2
+writeUnsignedInt	KEYWORD2
+writeWord	KEYWORD2
+writeLong	KEYWORD2
+writeUnsignedLong	KEYWORD2
+writeFloat	KEYWORD2
+writeDouble	KEYWORD2
+readByte	KEYWORD2
+readBoolean	KEYWORD2
+readChar	KEYWORD2
+readUnsignedChar	KEYWORD2
+readInt	KEYWORD2
+readUnsignedInt	KEYWORD2
+readWord	KEYWORD2
+readLong	KEYWORD2
+readUnsignedLong	KEYWORD2
+readFloat	KEYWORD2
+readDouble	KEYWORD2
+readFully	KEYWORD2
+skipBytes	KEYWORD2
+
+########################################################################
+# Constants (LITERAL1)
+########################################################################

@@ -1,0 +1,31 @@
+########################################################################
+# Syntax Coloring Map For DataOutputStream
+########################################################################
+
+########################################################################
+# Datatypes (KEYWORD1)
+########################################################################
+
+DataOutputStream	KEYWORD1
+
+########################################################################
+# Methods and Functions (KEYWORD2)
+########################################################################
+
+write	KEYWORD2
+writeByte	KEYWORD2
+writeBytes	KEYWORD2
+writeBoolean	KEYWORD2
+writeChar	KEYWORD2
+writeUnsignedChar	KEYWORD2
+writeInt	KEYWORD2
+writeUnsignedInt	KEYWORD2
+writeWord	KEYWORD2
+writeLong	KEYWORD2
+writeUnsignedLong	KEYWORD2
+writeFloat	KEYWORD2
+writeDouble	KEYWORD2
+
+########################################################################
+# Constants (LITERAL1)
+########################################################################
