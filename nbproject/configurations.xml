@@ -143,6 +143,11 @@
         <in>SeekableInputStream.h</in>
       </df>
       <df name="SerialInputStream">
+        <df name="examples">
+          <df name="echo">
+            <in>echo.ino</in>
+          </df>
+        </df>
         <in>SerialInputStream.cpp</in>
         <in>SerialInputStream.h</in>
       </df>
@@ -160,6 +165,18 @@
       </df>
       <df name="test">
         <in>main.cpp</in>
+      </df>
+      <df name="WireInputStream">
+        <df name="examples">
+        </df>
+        <in>WireInputStream.cpp</in>
+        <in>WireInputStream.h</in>
+      </df>
+      <df name="WireOutputSream">
+        <df name="examples">
+        </df>
+        <in>WireOutputStream.cpp</in>
+        <in>WireOutputStream.h</in>
       </df>
     </df>
     <logicalFolder name="ExternalFiles"
