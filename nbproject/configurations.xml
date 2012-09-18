@@ -42,10 +42,6 @@
         <in>DataOutputStream.cpp</in>
         <in>DataOutputStream.h</in>
       </df>
-      <df name="doc">
-        <df name="html">
-        </df>
-      </df>
       <df name="ExternalEepromInputStream">
         <df name="examples">
           <df name="reading_to_serial">

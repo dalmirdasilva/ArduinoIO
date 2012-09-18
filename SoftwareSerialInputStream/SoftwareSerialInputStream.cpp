@@ -20,10 +20,7 @@ int SoftwareSerialInputStream::available() {
 }
 
 int SoftwareSerialInputStream::read() {
-    if (available() > 0) {
-        return serial->read();
-    }
-    return -1;
+    return serial->read();
 }
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_CPP__ */
