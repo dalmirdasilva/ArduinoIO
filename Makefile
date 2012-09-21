@@ -30,7 +30,9 @@ LIB_LIST=BufferedInputStream \
 	SerialOutputStream \
 	SoftwareSerialOutputStream \
 	HardwareSerialOutputStream \
-	HardwareSerialInputStream
+	HardwareSerialInputStream \
+	PgmspaceInputStream \
+        PgmspaceSeekableInputStream
 SOURCE_PATH=`pwd`
 
 all: 
