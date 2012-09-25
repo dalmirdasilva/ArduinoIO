@@ -24,17 +24,18 @@ int WireInputStream::read() {
     Wire.beginTransmission(address);
     Wire.write((unsigned char) (address & 0xff));
     Wire.endTransmission();
-    Wire.requestFrom(addredd, 1);
+    Wire.requestFrom(address, 1);
     while (!Wire.available());
     return Wire.read();
 }
 
 int WireInputStream::read(unsigned char* b, int off, int len) {
+    int i;
     Wire.beginTransmission(address);
     Wire.write((unsigned char) (address & 0xff));
     Wire.endTransmission();
     Wire.requestFrom(address, len);
-    for (int i = 0; i < len; i++) {
+    for (i = 0; i < len; i++) {
         while (!Wire.available());
         b[off + i] = (unsigned char) Wire.read();
     }

@@ -96,6 +96,22 @@
         <in>OutputStream.cpp</in>
         <in>OutputStream.h</in>
       </df>
+      <df name="PgmspaceInputStream">
+        <df name="examples">
+        </df>
+        <in>PgmspaceInputStream.cpp</in>
+        <in>PgmspaceInputStream.h</in>
+      </df>
+      <df name="PgmspaceSeekableInputStream">
+        <df name="examples">
+          <df name="reading_from_pgm">
+            <in>reading_from_pgm.ino</in>
+          </df>
+        </df>
+        <in>PgmspaceSeekableInputStream.cpp</in>
+        <in>PgmspaceSeekableInputStream.h</in>
+        <in>keywords.txt</in>
+      </df>
       <df name="RandomAccess">
         <in>RandomAccess.cpp</in>
         <in>RandomAccess.h</in>
@@ -203,6 +219,13 @@
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
           <executablePath>io.bin</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/share/arduino/libraries/VirtualWire</pElem>
+              <pElem>/usr/share/arduino/libraries/Wire</pElem>
+              <pElem>/usr/share/arduino/hardware/arduino/cores/arduino</pElem>
+            </incDir>
+          </ccTool>
         </makeTool>
       </makefileType>
       <folder path="io/BufferedInputStream">
