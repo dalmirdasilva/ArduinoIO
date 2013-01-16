@@ -81,38 +81,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-libio.lss \
+libArduinoIO.lss \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: libio.a secondary-outputs
+all: libArduinoIO.a secondary-outputs
 
 # Tool invocations
-libio.a: $(OBJS)
+libArduinoIO.a: $(OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR Archiver'
-	avr-ar -r  "libio.a" $(OBJS) $(LIBS)
+	avr-ar -r  "libArduinoIO.a" $(OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-libio.lss: libio.a
+libArduinoIO.lss: libArduinoIO.a
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S libio.a  >"libio.lss"
+	-avr-objdump -h -S libArduinoIO.a  >"libArduinoIO.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: libio.a
+sizedummy: libArduinoIO.a
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega328p libio.a
+	-avr-size --format=avr --mcu=atmega16 libArduinoIO.a
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(ARCHIVES)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) libio.a
+	-$(RM) $(OBJS)$(C_DEPS)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(ARCHIVES)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) libArduinoIO.a
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(SIZEDUMMY)
