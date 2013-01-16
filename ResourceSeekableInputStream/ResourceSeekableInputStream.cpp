@@ -10,6 +10,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_CPP__
 #define __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_CPP__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include "ResourceSeekableInputStream.h"
     
 ResourceSeekableInputStream::ResourceSeekableInputStream(Resource* resource) : ResourceInputStream(resource) {
@@ -18,5 +20,7 @@ ResourceSeekableInputStream::ResourceSeekableInputStream(Resource* resource) : R
 void ResourceSeekableInputStream::seek(unsigned int pos) {
     resource->seek((Resource::ResourceSeekOrigin)0, pos);
 }
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_CPP__ */

@@ -9,6 +9,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__
 #define __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include <OutputStream.h>
 #include <Resource.h>
 
@@ -39,5 +41,7 @@ public:
      */
     virtual void write(unsigned char b);
 };
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__ */

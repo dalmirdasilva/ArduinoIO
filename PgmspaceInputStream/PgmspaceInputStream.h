@@ -19,7 +19,7 @@ protected:
     /* 
      * The buffer where data is stored.
      */
-    prog_char* buf;
+    char PROGMEM* buf;
 
     /*
      * The number of valid bytes in the buffer.
@@ -38,7 +38,7 @@ protected:
 
 public:
 
-    explicit PgmspaceInputStream(prog_char* buf, unsigned int count);
+    explicit PgmspaceInputStream(char PROGMEM* buf, unsigned int count);
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

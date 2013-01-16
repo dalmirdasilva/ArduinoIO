@@ -11,7 +11,8 @@
 #ifndef __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__
 #define __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__ 1
 
-#include <stdint.h>
+#if USING_RESOURCE_LIBRARIES
+
 #include "RandomAccessResource.h"
 
 RandomAccessResource::RandomAccessResource(Resource* resource) : resource(resource) {
@@ -166,5 +167,7 @@ unsigned int RandomAccessResource::skipBytes(unsigned int n) {
     seek(newpos);
     return (unsigned int) (newpos - pos);
 }
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__ */

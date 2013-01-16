@@ -12,7 +12,7 @@
 
 #include "PgmspaceInputStream.h"
 
-PgmspaceInputStream::PgmspaceInputStream(prog_char* buf, unsigned int count) : buf(buf), count(count) {
+PgmspaceInputStream::PgmspaceInputStream(char PROGMEM* buf, unsigned int count) : buf(buf), count(count) {
     markpos = 0;
     pos = 0;
 }

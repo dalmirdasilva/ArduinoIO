@@ -10,6 +10,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_H__
 #define __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_H__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include <SeekableInputStream.h>
 #include <ResourceInputStream.h>
 #include <Resource.h>
@@ -31,5 +33,7 @@ public:
      */
     virtual void seek(unsigned int pos);
 };
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_SEEKABLE_INPUT_STREAM_H__ */

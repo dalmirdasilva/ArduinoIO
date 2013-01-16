@@ -9,6 +9,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__
 #define __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include "ResourceInputStream.h"
 
 ResourceInputStream::ResourceInputStream(Resource* resource) : resource(resource) {
@@ -49,5 +51,7 @@ int ResourceInputStream::read() {
 void ResourceInputStream::reset() {
     resource->seek((Resource::ResourceSeekOrigin)0, markpos);
 }
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__ */

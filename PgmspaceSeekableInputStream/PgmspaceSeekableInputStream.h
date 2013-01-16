@@ -16,7 +16,7 @@
 class PgmspaceSeekableInputStream : public SeekableInputStream, public PgmspaceInputStream {
 public:
     
-    PgmspaceSeekableInputStream(prog_char* buf, unsigned int count);
+    PgmspaceSeekableInputStream(char PROGMEM* buf, unsigned int count);
     
     virtual void seek(unsigned int pos);
 };

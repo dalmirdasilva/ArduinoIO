@@ -10,6 +10,8 @@
 #ifndef __ARDUINO_IO_DATA_OUTPUT_H__
 #define __ARDUINO_IO_DATA_OUTPUT_H__ 1
 
+#include <Arduino.h>
+
 class DataOutput {
 public:
 

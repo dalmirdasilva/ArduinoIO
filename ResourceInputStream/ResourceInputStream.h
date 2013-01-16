@@ -9,6 +9,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_INPUT_STREAM_H__
 #define __ARDUINO_IO_RESOURCE_INPUT_STREAM_H__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include <InputStream.h>
 #include <Resource.h>
 
@@ -78,5 +80,7 @@ public:
      */
     virtual void reset();
 };
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_INPUT_STREAM_H__ */

@@ -11,6 +11,7 @@
 #ifndef __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__
 #define __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__ 1
 
+#include <Arduino.h>
 #include <RandomAccess.h>
 #include <Closeable.h>
 #include <ExternalEeprom.h>

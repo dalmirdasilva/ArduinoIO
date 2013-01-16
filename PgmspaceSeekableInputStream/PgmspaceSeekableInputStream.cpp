@@ -12,7 +12,7 @@
 
 #include "PgmspaceSeekableInputStream.h"
     
-PgmspaceSeekableInputStream::PgmspaceSeekableInputStream(prog_char* buf, unsigned int count) : PgmspaceInputStream(buf, count) {
+PgmspaceSeekableInputStream::PgmspaceSeekableInputStream(char PROGMEM* buf, unsigned int count) : PgmspaceInputStream(buf, count) {
 }
 
 void PgmspaceSeekableInputStream::seek(unsigned int pos) {

@@ -11,6 +11,8 @@
 #ifndef __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_H__
 #define __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_H__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include <RandomAccess.h>
 #include <Closeable.h>
 #include <Resource.h>
@@ -243,4 +245,7 @@ public:
      */
     virtual unsigned int skipBytes(unsigned int n);
 };
+
+#endif /* USING_RESOURCE_LIBRARIES */
+
 #endif /* __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_H__ */

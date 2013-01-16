@@ -9,6 +9,8 @@
 #ifndef __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_CPP__
 #define __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_CPP__ 1
 
+#if USING_RESOURCE_LIBRARIES
+
 #include "ResourceOutputStream.h"
 
 ResourceOutputStream::ResourceOutputStream(Resource* resource) : resource(resource) {
@@ -21,5 +23,7 @@ void ResourceOutputStream::close() {
 void ResourceOutputStream::write(unsigned char b) {
     resource->write(b);
 }
+
+#endif /* USING_RESOURCE_LIBRARIES */
 
 #endif /* __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_CPP__ */
