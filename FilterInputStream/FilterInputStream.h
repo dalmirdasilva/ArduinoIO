@@ -20,7 +20,7 @@
 
 class FilterInputStream : public virtual InputStream {
 
-protected:  
+protected:
 
     /**
      * The input stream to be filtered. 
@@ -35,10 +35,10 @@ protected:
      *
      * @param   in   the underlying input stream
      */
-     FilterInputStream(InputStream* in);
+    FilterInputStream(InputStream* in);
 
 public:
-    
+
     /**
      * Reads the next unsigned char of data from this input stream. The value 
      * unsigned char is returned as an <code>int</code> in the range 

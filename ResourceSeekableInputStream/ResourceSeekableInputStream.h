@@ -18,7 +18,7 @@
 
 class ResourceSeekableInputStream : public ResourceInputStream, public SeekableInputStream {
 public:
-    
+
     /**
      * Public constructor.
      * 

@@ -11,7 +11,8 @@
 
 #include "DataOutputStream.h"
 
-DataOutputStream::DataOutputStream(OutputStream* outputStream) : outputStream(outputStream) {
+DataOutputStream::DataOutputStream(OutputStream* outputStream) :
+        outputStream(outputStream) {
 }
 
 void DataOutputStream::write(unsigned char* b, int len) {

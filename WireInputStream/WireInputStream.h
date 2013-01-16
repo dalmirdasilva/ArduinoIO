@@ -15,14 +15,14 @@
 
 class WireInputStream : public InputStream {
 protected:
-    
+
     /**
      * The wire device address.
      */
     unsigned char address;
-    
+
 public:
-    
+
     /**
      * Public constructor.
      * 
@@ -35,12 +35,12 @@ public:
      * input stream without blocking by the next caller of a method for this input stream.
      */
     virtual int available();
-    
+
     /**
      * Reads the next unsigned char of data from the input stream.
      */
     virtual int read();
-    
+
     /**
      * Writes len of bytes into the stream.
      * 

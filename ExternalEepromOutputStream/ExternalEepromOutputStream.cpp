@@ -11,7 +11,9 @@
 
 #include "ExternalEepromOutputStream.h"
 
-ExternalEepromOutputStream::ExternalEepromOutputStream(ExternalEeprom* externalEeprom) : externalEeprom(externalEeprom) {
+ExternalEepromOutputStream::ExternalEepromOutputStream(
+        ExternalEeprom* externalEeprom) :
+        externalEeprom(externalEeprom) {
     pos = 0;
 }
 

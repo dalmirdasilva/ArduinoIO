@@ -30,28 +30,28 @@ public:
      * with the stream.
      */
     virtual void close();
-    
+
     /**
      * Marks the current position in this input stream.
      */
     virtual void mark();
-    
+
     /**
      * Tests if this input stream supports the mark and reset methods.
      */
     virtual bool markSupported();
-    
+
     /**
      * Reads the next unsigned char of data from the input stream.
      */
     virtual int read() = 0;
-            
+
     /**
      * Reads some number of bytes from the input stream and stores them into 
      * the buffer array b.
      */
     virtual int read(unsigned char* b, int len);
-    
+
     /**
      * Writes len of bytes into the stream.
      * 
@@ -61,13 +61,13 @@ public:
      * @return 
      */
     virtual int read(unsigned char* b, int off, int len);
-    
+
     /**
      * Repositions this stream to the position at the time the mark method was 
      * last called on this input stream.
      */
     virtual void reset();
-    
+
     /**
      * Skips over and discards n bytes of data from this input stream.
      */

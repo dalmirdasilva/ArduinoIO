@@ -21,21 +21,21 @@ protected:
      * The resource where data is stored.
      */
     Resource* resource;
-    
+
 public:
-    
+
     ResourceOutputStream(Resource* resource);
 
     /**
      * Closing a ResourceOutputStream has no effect.
      */
     virtual void close();
-    
+
     /**
      * Using parent write.
      */
     using OutputStream::write;
-    
+
     /**
      * Writes the specified unsigned char to this output stream.
      */

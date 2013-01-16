@@ -13,5 +13,4 @@ public:
     virtual void seek(unsigned int pos) = 0;
 };
 
-
 #endif /* __ARDUINO_IO_SEEKABLE_H__ */

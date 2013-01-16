@@ -26,7 +26,9 @@
 
 #include "BufferedInputStream.h"
 
-BufferedInputStream::BufferedInputStream(InputStream* in, unsigned char* buf, int size) : FilterInputStream(in), buf(buf) {
+BufferedInputStream::BufferedInputStream(InputStream* in, unsigned char* buf,
+        int size) :
+        FilterInputStream(in), buf(buf) {
     this->size = size;
     count = 0;
     pos = 0;
@@ -53,7 +55,7 @@ int BufferedInputStream::read(unsigned char* b, int len) {
 int BufferedInputStream::read(unsigned char* b, int off, int len) {
     int cnt, available;
     available = count - pos;
-    
+
     /*
      * The needed data are already in the buffer? 
      */
@@ -64,7 +66,7 @@ int BufferedInputStream::read(unsigned char* b, int off, int len) {
         pos += len;
         return len;
     }
-    
+
     /*
      * The buffer data is not enough, but is necessary.
      */
@@ -74,12 +76,12 @@ int BufferedInputStream::read(unsigned char* b, int off, int len) {
     marked = false;
     pos = 0;
     count = 0;
-    
+
     /*
      * Reads the rest from the stream.
      */
     cnt = in->read(b, off + available, len - available);
-    
+
     /*
      * Tests if we had enough data.
      */
@@ -94,7 +96,7 @@ int BufferedInputStream::read(unsigned char* b, int off, int len) {
 }
 
 int BufferedInputStream::read() {
-    
+
     /*
      * Tests if the buffer is completely used.
      */

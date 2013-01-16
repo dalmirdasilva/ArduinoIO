@@ -18,7 +18,7 @@
 #include <Resource.h>
 
 class RandomAccessResource : public RandomAccess {
-    
+
     /**
      * The resource to be used.
      */

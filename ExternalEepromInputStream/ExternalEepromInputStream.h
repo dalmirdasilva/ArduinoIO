@@ -37,7 +37,7 @@ protected:
     unsigned int externalEepromSize;
 
 public:
-    
+
     /**
      * Public constructor.
      * 
@@ -53,19 +53,19 @@ public:
      * @return int      The available number of bytes.
      */
     virtual int available();
-    
+
     /**
      * Marks the current position in this input stream.
      */
     virtual void mark();
-    
+
     /**
      * Tests if this input stream supports the mark and reset methods.
      * 
      * @return bool
      */
     virtual bool markSupported();
-    
+
     /**
      * Using the parent read.
      */
@@ -77,7 +77,7 @@ public:
      * @return int      The read unsigned char as an int.
      */
     virtual int read();
-    
+
     /**
      * Reads len of bytes from the input stream.
      * 
@@ -87,7 +87,7 @@ public:
      * @return 
      */
     virtual int read(unsigned char* b, int off, int len);
-    
+
     /**
      * Repositions this stream to the position at the time the mark method was 
      * last called on this input stream.

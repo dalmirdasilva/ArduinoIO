@@ -12,7 +12,9 @@
 
 #include "ByteArrayInputStream.h"
 
-ByteArrayInputStream::ByteArrayInputStream(unsigned char* buf, unsigned int count) : buf(buf), count(count) {
+ByteArrayInputStream::ByteArrayInputStream(unsigned char* buf,
+        unsigned int count) :
+        buf(buf), count(count) {
     markpos = 0;
     pos = 0;
 }

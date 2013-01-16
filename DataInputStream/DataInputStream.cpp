@@ -11,7 +11,8 @@
 
 #include "DataInputStream.h"
 
-DataInputStream::DataInputStream(InputStream* inputStream) : inputStream(inputStream) {
+DataInputStream::DataInputStream(InputStream* inputStream) :
+        inputStream(inputStream) {
 }
 
 unsigned char DataInputStream::readByte() {

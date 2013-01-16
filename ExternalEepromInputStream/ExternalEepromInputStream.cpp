@@ -12,7 +12,9 @@
 
 #include "ExternalEepromInputStream.h"
 
-ExternalEepromInputStream::ExternalEepromInputStream(ExternalEeprom* externalEeprom) : externalEeprom(externalEeprom) {
+ExternalEepromInputStream::ExternalEepromInputStream(
+        ExternalEeprom* externalEeprom) :
+        externalEeprom(externalEeprom) {
     markpos = 0;
     pos = 0;
     externalEepromSize = externalEeprom->getDeviceSize();

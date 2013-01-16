@@ -17,12 +17,12 @@
 #include <ExternalEeprom.h>
 
 class RandomAccessExternalEeprom : public RandomAccess, public virtual Closeable {
-    
+
     /**
      * The external eeprom to be used.
      */
     ExternalEeprom* externalEeprom;
-    
+
     /**
      * Current position.
      */

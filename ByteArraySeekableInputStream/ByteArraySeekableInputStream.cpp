@@ -11,8 +11,10 @@
 #define __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ 1
 
 #include "ByteArraySeekableInputStream.h"
-    
-ByteArraySeekableInputStream::ByteArraySeekableInputStream(unsigned char* buf, unsigned int count) : ByteArrayInputStream(buf, count) {
+
+ByteArraySeekableInputStream::ByteArraySeekableInputStream(unsigned char* buf,
+        unsigned int count) :
+        ByteArrayInputStream(buf, count) {
 }
 
 void ByteArraySeekableInputStream::seek(unsigned int pos) {

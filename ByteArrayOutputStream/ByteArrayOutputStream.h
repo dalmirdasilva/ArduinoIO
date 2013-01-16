@@ -44,7 +44,7 @@ public:
      * Resets the count field of this unsigned char array output stream to zero.
      */
     void reset();
-    
+
     /**
      * Returns the current size of the buffer.
      * 

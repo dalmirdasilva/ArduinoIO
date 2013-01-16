@@ -11,7 +11,9 @@
 
 #include "SoftwareSerialInputStream.h"
 
-SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *serial, unsigned int boundRate) : serial(serial) {
+SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *serial,
+        unsigned int boundRate) :
+        serial(serial) {
     serial->begin(boundRate);
 }
 

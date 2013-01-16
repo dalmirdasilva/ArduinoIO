@@ -11,7 +11,7 @@
 #define __ARDUINO_IO_PGMSPACE_SEEKABLE_INPUT_STREAM_CPP__ 1
 
 #include "PgmspaceSeekableInputStream.h"
-    
+
 PgmspaceSeekableInputStream::PgmspaceSeekableInputStream(char PROGMEM* buf, unsigned int count) : PgmspaceInputStream(buf, count) {
 }
 

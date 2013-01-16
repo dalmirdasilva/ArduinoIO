@@ -14,7 +14,7 @@
 #include <Closeable.h>
 
 class RandomAccessByteArray : public RandomAccess, public virtual Closeable {
-    
+
     /**
      * Buffer used to work.
      */

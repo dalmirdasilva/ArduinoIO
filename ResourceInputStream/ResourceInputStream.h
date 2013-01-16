@@ -38,7 +38,7 @@ protected:
     unsigned int resourceSize;
 
 public:
-    
+
     ResourceInputStream(Resource* resource);
 
     /**
@@ -53,27 +53,27 @@ public:
      * with the stream.
      */
     virtual void close();
-    
+
     /**
      * Marks the current position in this input stream.
      */
     virtual void mark();
-    
+
     /**
      * Tests if this input stream supports the mark and reset methods.
      */
     virtual bool markSupported();
-    
+
     /**
      * Using the parent read.
      */
     using InputStream::read;
-    
+
     /**
      * Reads the next unsigned char of data from the input stream.
      */
     virtual int read();
-    
+
     /**
      * Repositions this stream to the position at the time the mark method was 
      * last called on this input stream.

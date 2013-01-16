@@ -13,11 +13,12 @@
 #include <SeekableInputStream.h>
 #include <ByteArrayInputStream.h>
 
-class ByteArraySeekableInputStream : public SeekableInputStream, public ByteArrayInputStream {
+class ByteArraySeekableInputStream : public SeekableInputStream,
+        public ByteArrayInputStream {
 public:
-    
+
     ByteArraySeekableInputStream(unsigned char* buf, unsigned int count);
-    
+
     virtual void seek(unsigned int pos);
 };
 

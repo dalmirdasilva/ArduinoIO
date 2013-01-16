@@ -14,7 +14,9 @@
 
 #include "BufferedOutputStream.h"
 
-BufferedOutputStream::BufferedOutputStream(OutputStream* out, unsigned char* buf, int size) : FilterOutputStream(out), buf(buf) {
+BufferedOutputStream::BufferedOutputStream(OutputStream* out,
+        unsigned char* buf, int size) :
+        FilterOutputStream(out), buf(buf) {
     this->size = size;
     count = 0;
 }

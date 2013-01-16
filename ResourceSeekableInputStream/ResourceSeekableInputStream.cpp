@@ -13,7 +13,7 @@
 #if USING_RESOURCE_LIBRARIES
 
 #include "ResourceSeekableInputStream.h"
-    
+
 ResourceSeekableInputStream::ResourceSeekableInputStream(Resource* resource) : ResourceInputStream(resource) {
 }
 

@@ -14,9 +14,10 @@
 #include <SeekableInputStream.h>
 #include <ExternalEepromInputStream.h>
 
-class ExternalEepromSeekableInputStream : public ExternalEepromInputStream, public SeekableInputStream {
+class ExternalEepromSeekableInputStream : public ExternalEepromInputStream,
+        public SeekableInputStream {
 public:
-    
+
     /**
      * Public constructor.
      * 

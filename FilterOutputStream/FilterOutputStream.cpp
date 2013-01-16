@@ -21,7 +21,8 @@
 
 #include "FilterOutputStream.h"
 
-FilterOutputStream::FilterOutputStream(OutputStream* out) : out(out) {
+FilterOutputStream::FilterOutputStream(OutputStream* out) :
+        out(out) {
 }
 
 void FilterOutputStream::write(unsigned char b) {
@@ -46,5 +47,4 @@ void FilterOutputStream::close() {
 }
 
 #endif /* __ARDUINO_IO_FILTER_OUTPUT_STREAM_CPP__ 1 */
-
 

@@ -20,14 +20,14 @@
 #define __ARDUINO_IO_FILTER_OUTPUT_STREAM_H__ 1
 
 #include <OutputStream.h>
- 
+
 class FilterOutputStream : public OutputStream {
 protected:
 
     /**
      * The underlying output stream to be filtered.
      */
-     OutputStream* out;
+    OutputStream* out;
 public:
 
     /**
@@ -64,7 +64,7 @@ public:
      * @param      len the length
      */
     virtual void write(unsigned char* b, int len);
-    
+
     /**
      * Writes <code>len</code> bytes from the specified
      * <code>unsigned char</code> array starting at offset <code>off</code> to

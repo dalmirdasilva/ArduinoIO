@@ -106,7 +106,7 @@ libArduinoIO.lss: libArduinoIO.a
 
 sizedummy: libArduinoIO.a
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega16 libArduinoIO.a
+	-avr-size --format=avr --mcu=atmega328p libArduinoIO.a
 	@echo 'Finished building: $@'
 	@echo ' '
 

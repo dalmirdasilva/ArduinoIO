@@ -14,7 +14,7 @@
 #include <ExternalEeprom.h>
 
 class ExternalEepromOutputStream : public OutputStream {
-    
+
     /**
      * The associated eeprom.
      */
@@ -33,19 +33,19 @@ public:
      * @param externalEeprom
      */
     ExternalEepromOutputStream(ExternalEeprom* externalEeprom);
-    
+
     /**
      * Using parent write.
      */
     using OutputStream::write;
-    
+
     /**
      * Writes the specified unsigned char to this output stream.
      * 
      * @param b
      */
     virtual void write(unsigned char b);
-    
+
     /**
      * Writes len bytes from the specified unsigned char array starting at offset off to 
      * this output stream.

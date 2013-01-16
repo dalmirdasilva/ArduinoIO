@@ -13,7 +13,7 @@
 #include <InputStream.h>
 
 class DataInputStream : public DataInput {
-    
+
     /**
      * The used input stream.
      */

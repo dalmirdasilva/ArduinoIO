@@ -34,7 +34,7 @@ protected:
      * unsigned char data.
      */
     int count;
-    
+
 public:
 
     /**
@@ -54,7 +54,7 @@ public:
      * @exception  IOException  if an I/O error occurs.
      */
     void write(unsigned char b);
-    
+
     /**
      * Writes len bytes from the specified unsigned char array to this output stream. 
      * The general contract for write(b, len) is that it should have exactly 
@@ -87,7 +87,7 @@ public:
      * output bytes to be written out to the underlying output stream.
      */
     virtual void flush();
-    
+
     virtual void close();
 
 private:

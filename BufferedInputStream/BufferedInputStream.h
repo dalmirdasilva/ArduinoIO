@@ -32,14 +32,14 @@ class BufferedInputStream : public FilterInputStream {
      * The size of the buffer.
      */
     unsigned int size;
-    
+
 protected:
-    
+
     /**
      * The internal buffer array where the data is stored.
      */
     unsigned char* buf;
-    
+
     /**
      * The index one greater than the index of the last valid unsigned char in 
      * the buffer. 
@@ -65,7 +65,7 @@ protected:
      * read from the contained  input stream.
      */
     int pos;
-    
+
     /**
      * The value of the <code>pos</code> field at the time the last
      * <code>mark</code> method was called.
@@ -96,9 +96,9 @@ protected:
      * Flag to determine if there is a marker on this input stream.
      */
     bool marked;
-    
+
 public:
-    
+
     /**
      * Public constructor.
      * 
@@ -120,22 +120,22 @@ public:
      * with the stream.
      */
     virtual void close();
-    
+
     /**
      * Marks the current position in this input stream.
      */
     virtual void mark();
-    
+
     /**
      * Tests if this input stream supports the mark and reset methods.
      */
     virtual bool markSupported();
-    
+
     /**
      * Reads the next unsigned char of data from the input stream.
      */
     virtual int read();
-    
+
     /**
      * Reads some number of bytes from the input stream and stores them into 
      * the buffer array b.
@@ -145,31 +145,31 @@ public:
      * @return 
      */
     virtual int read(unsigned char* b, int len);
-    
+
     /**
      * Reads some number of bytes from the input stream and stores them into 
      * the buffer array b.
      */
     virtual int read(unsigned char* b, int off, int len);
-    
+
     /**
      * Repositions this stream to the position at the time the mark method was 
      * last called on this input stream.
      */
     virtual void reset();
-    
+
     /**
      * Skips over and discards n bytes of data from this input stream.
      */
     virtual unsigned int skip(unsigned int n);
-    
+
 private:
-    
+
     /**
      * Moves the valid bytes on the buffer to the left side of the buffer.
      */
     void realineBufferContent();
-    
+
     /**
      * Fills the buffer.
      * 

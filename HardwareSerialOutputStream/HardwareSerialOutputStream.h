@@ -13,16 +13,16 @@
 #include <OutputStream.h>
 #include <SerialOutputStream.h>
 
-class HardwareSerialOutputStream : public SerialOutputStream {        
+class HardwareSerialOutputStream : public SerialOutputStream {
 public:
-    
+
     /**
      * Public constructor.
      * 
      * @param boundRate
      */
     HardwareSerialOutputStream(unsigned int boundRate);
-    
+
     /**
      * Writes the specified unsigned char to this output stream.
      */

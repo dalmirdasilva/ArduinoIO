@@ -21,17 +21,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
   1 .group        00000008  00000000  00000000  0000003c  2**2
                   CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
-  2 .text         000000f8  00000000  00000000  00000044  2**0
+  2 .text         000000f4  00000000  00000000  00000044  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  3 .data         00000000  00000000  00000000  0000013c  2**0
+  3 .data         00000000  00000000  00000000  00000138  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .bss          00000000  00000000  00000000  0000013c  2**0
+  4 .bss          00000000  00000000  00000000  00000138  2**0
                   ALLOC
-  5 .rodata._ZTV15WireInputStream 00000016  00000000  00000000  0000013c  2**0
+  5 .rodata._ZTV15WireInputStream 00000016  00000000  00000000  00000138  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
-  6 .rodata._ZTV9Closeable 00000006  00000000  00000000  00000152  2**0
+  6 .rodata._ZTV9Closeable 00000006  00000000  00000000  0000014e  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
-  7 .comment      00000012  00000000  00000000  00000158  2**0
+  7 .comment      00000012  00000000  00000000  00000154  2**0
                   CONTENTS, READONLY
 
 Disassembly of section .text:
@@ -125,34 +125,32 @@ Disassembly of section .text:
   b4:	80 e0       	ldi	r24, 0x00	; 0
   b6:	90 e0       	ldi	r25, 0x00	; 0
   b8:	0e 94 00 00 	call	0	; 0x0 <_ZN15WireInputStream9availableEv>
-  bc:	6a 81       	ldd	r22, Y+2	; 0x02
-  be:	41 e0       	ldi	r20, 0x01	; 1
-  c0:	50 e0       	ldi	r21, 0x00	; 0
-  c2:	70 e0       	ldi	r23, 0x00	; 0
-  c4:	80 e0       	ldi	r24, 0x00	; 0
-  c6:	90 e0       	ldi	r25, 0x00	; 0
-  c8:	0e 94 00 00 	call	0	; 0x0 <_ZN15WireInputStream9availableEv>
-  cc:	80 e0       	ldi	r24, 0x00	; 0
-  ce:	90 e0       	ldi	r25, 0x00	; 0
-  d0:	0e 94 00 00 	call	0	; 0x0 <_ZN15WireInputStream9availableEv>
-  d4:	89 2b       	or	r24, r25
-  d6:	01 f0       	breq	.+0      	; 0xd8 <_ZN15WireInputStream4readEv+0x3e>
-  d8:	80 e0       	ldi	r24, 0x00	; 0
-  da:	90 e0       	ldi	r25, 0x00	; 0
-  dc:	df 91       	pop	r29
-  de:	cf 91       	pop	r28
-  e0:	0c 94 00 00 	jmp	0	; 0x0 <_ZN15WireInputStream9availableEv>
+  bc:	41 e0       	ldi	r20, 0x01	; 1
+  be:	6a 81       	ldd	r22, Y+2	; 0x02
+  c0:	80 e0       	ldi	r24, 0x00	; 0
+  c2:	90 e0       	ldi	r25, 0x00	; 0
+  c4:	0e 94 00 00 	call	0	; 0x0 <_ZN15WireInputStream9availableEv>
+  c8:	80 e0       	ldi	r24, 0x00	; 0
+  ca:	90 e0       	ldi	r25, 0x00	; 0
+  cc:	0e 94 00 00 	call	0	; 0x0 <_ZN15WireInputStream9availableEv>
+  d0:	89 2b       	or	r24, r25
+  d2:	01 f0       	breq	.+0      	; 0xd4 <_ZN15WireInputStream4readEv+0x3a>
+  d4:	80 e0       	ldi	r24, 0x00	; 0
+  d6:	90 e0       	ldi	r25, 0x00	; 0
+  d8:	df 91       	pop	r29
+  da:	cf 91       	pop	r28
+  dc:	0c 94 00 00 	jmp	0	; 0x0 <_ZN15WireInputStream9availableEv>
 
-000000e4 <_ZN15WireInputStreamC1Eh>:
-  e4:	20 e0       	ldi	r18, 0x00	; 0
-  e6:	30 e0       	ldi	r19, 0x00	; 0
-  e8:	fc 01       	movw	r30, r24
-  ea:	31 83       	std	Z+1, r19	; 0x01
-  ec:	20 83       	st	Z, r18
-  ee:	62 83       	std	Z+2, r22	; 0x02
-  f0:	80 e0       	ldi	r24, 0x00	; 0
-  f2:	90 e0       	ldi	r25, 0x00	; 0
-  f4:	0c 94 00 00 	jmp	0	; 0x0 <_ZN15WireInputStream9availableEv>
+000000e0 <_ZN15WireInputStreamC1Eh>:
+  e0:	20 e0       	ldi	r18, 0x00	; 0
+  e2:	30 e0       	ldi	r19, 0x00	; 0
+  e4:	fc 01       	movw	r30, r24
+  e6:	31 83       	std	Z+1, r19	; 0x01
+  e8:	20 83       	st	Z, r18
+  ea:	62 83       	std	Z+2, r22	; 0x02
+  ec:	80 e0       	ldi	r24, 0x00	; 0
+  ee:	90 e0       	ldi	r25, 0x00	; 0
+  f0:	0c 94 00 00 	jmp	0	; 0x0 <_ZN15WireInputStream9availableEv>
 
 SoftwareSerialOutputStream.o:     file format elf32-avr
 

@@ -18,7 +18,8 @@
 
 #include "FilterInputStream.h"
 
-FilterInputStream::FilterInputStream(InputStream* in) : in(in) {
+FilterInputStream::FilterInputStream(InputStream* in) :
+        in(in) {
 }
 
 int FilterInputStream::read() {

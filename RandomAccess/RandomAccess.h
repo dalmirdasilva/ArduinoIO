@@ -14,7 +14,8 @@
 #include <Closeable.h>
 #include <Seekable.h>
 
-class RandomAccess : public virtual DataOutput, public virtual DataInput, public virtual Closeable, public virtual Seekable {
+class RandomAccess : public virtual DataOutput, public virtual DataInput,
+        public virtual Closeable, public virtual Seekable {
 };
 
 #endif /* __ARDUINO_IO_RANDOM_ACCESS_H__ */

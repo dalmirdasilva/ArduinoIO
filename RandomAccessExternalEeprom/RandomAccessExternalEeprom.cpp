@@ -14,7 +14,9 @@
 #include <ExternalEeprom.h>
 #include "RandomAccessExternalEeprom.h"
 
-RandomAccessExternalEeprom::RandomAccessExternalEeprom(ExternalEeprom* externalEeprom) : externalEeprom(externalEeprom) {
+RandomAccessExternalEeprom::RandomAccessExternalEeprom(
+        ExternalEeprom* externalEeprom) :
+        externalEeprom(externalEeprom) {
     pos = 0;
 }
 

@@ -25,18 +25,18 @@ public:
      * with this stream.
      */
     virtual void close();
-    
+
     /**
      * Flushes this output stream and forces any buffered output bytes to be 
      * written out.
      */
     virtual void flush();
-    
+
     /**
      * Writes the specified unsigned char to this output stream.
      */
     virtual void write(unsigned char b) = 0;
-    
+
     /**
      * Writes len bytes from the specified unsigned char array to 
      * this output stream.
@@ -45,7 +45,7 @@ public:
      * @param len
      */
     virtual void write(unsigned char* b, int len);
-    
+
     /**
      * Writes len bytes from the specified unsigned char array starting at offset off to 
      * this output stream.
@@ -56,5 +56,5 @@ public:
      */
     virtual void write(unsigned char* b, int off, int len);
 };
- 
+
 #endif /* __ARDUINO_IO_OUTPUT_STREAM_H__ */

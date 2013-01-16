@@ -15,7 +15,7 @@
 
 class HardwareSerialInputStream : public SerialInputStream {
 public:
-    
+
     /**
      * Public constructor.
      * 
@@ -28,7 +28,7 @@ public:
      * input stream without blocking by the next caller of a method for this input stream.
      */
     virtual int available();
-    
+
     /**
      * Reads the next unsigned char of data from the input stream.
      */
