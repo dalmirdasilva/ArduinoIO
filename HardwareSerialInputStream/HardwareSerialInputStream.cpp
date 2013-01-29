@@ -16,7 +16,7 @@ HardwareSerialInputStream::HardwareSerialInputStream(unsigned int boundRate) {
 }
 
 int HardwareSerialInputStream::available() {
-    Serial.available();
+    return Serial.available();
 }
 
 int HardwareSerialInputStream::read() {

@@ -57,10 +57,9 @@ void InputStream::reset() {
 }
 
 unsigned int InputStream::skip(unsigned int n) {
-    unsigned char b;
     unsigned int i;
     for (i = 0; i < n && available() > 0; i++) {
-        b = read();
+        read();
     }
     return i;
 }

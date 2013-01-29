@@ -45,7 +45,7 @@ int ExternalEepromInputStream::read() {
 int ExternalEepromInputStream::read(unsigned char* b, int off, int len) {
     unsigned int available = (externalEepromSize - pos);
     int cnt;
-    len = (len > available) ? available : len;
+    len = (int) ((unsigned int) len > available) ? available : len;
     cnt = externalEeprom->readBytes(pos, &b[off], len);
     pos += cnt;
     return cnt;

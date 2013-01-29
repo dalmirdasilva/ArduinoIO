@@ -49,7 +49,7 @@ void BufferedInputStream::reset() {
 }
 
 int BufferedInputStream::read(unsigned char* b, int len) {
-    read(b, 0, len);
+    return read(b, 0, len);
 }
 
 int BufferedInputStream::read(unsigned char* b, int off, int len) {
