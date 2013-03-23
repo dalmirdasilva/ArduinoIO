@@ -19,9 +19,9 @@ public:
     /**
      * Public constructor.
      * 
-     * @param boundRate
+     * @param boudRate
      */
-    HardwareSerialOutputStream(unsigned int boundRate);
+    HardwareSerialOutputStream(unsigned int boudRate);
 
     /**
      * Writes the specified unsigned char to this output stream.

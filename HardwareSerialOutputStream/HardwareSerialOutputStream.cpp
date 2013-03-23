@@ -11,7 +11,7 @@
 
 #include "HardwareSerialOutputStream.h"
 
-HardwareSerialOutputStream::HardwareSerialOutputStream(unsigned int boundRate) {
+HardwareSerialOutputStream::HardwareSerialOutputStream(unsigned int boudRate) {
     Serial.begin(9600);
 }
 

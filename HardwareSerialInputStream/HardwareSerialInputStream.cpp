@@ -11,8 +11,8 @@
 
 #include "HardwareSerialInputStream.h"
 
-HardwareSerialInputStream::HardwareSerialInputStream(unsigned int boundRate) {
-    Serial.begin(boundRate);
+HardwareSerialInputStream::HardwareSerialInputStream(unsigned int boudRate) {
+    Serial.begin(boudRate);
 }
 
 int HardwareSerialInputStream::available() {

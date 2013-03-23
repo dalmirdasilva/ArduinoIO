@@ -13,7 +13,7 @@
 
 WireInputStream::WireInputStream(unsigned char address) {
     this->address = address;
-    Wire.begin(address);
+    Wire.begin();
 }
 
 int WireInputStream::available() {

@@ -28,9 +28,9 @@ public:
      * Public constructor.
      * 
      * @param serial
-     * @param boundRate
+     * @param boudRate
      */
-    SoftwareSerialInputStream(SoftwareSerial *serial, unsigned int boundRate);
+    SoftwareSerialInputStream(SoftwareSerial *serial, unsigned int boudRate);
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

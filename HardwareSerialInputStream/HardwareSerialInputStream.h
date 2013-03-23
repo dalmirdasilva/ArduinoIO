@@ -19,9 +19,9 @@ public:
     /**
      * Public constructor.
      * 
-     * @param boundRate
+     * @param boudRate
      */
-    HardwareSerialInputStream(unsigned int boundRate);
+    HardwareSerialInputStream(unsigned int boudRate);
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 
