@@ -35,6 +35,9 @@ bool ByteArrayInputStream::markSupported() {
 }
 
 int ByteArrayInputStream::read() {
+    if (pos >= count) {
+        return -1;
+    }
     return buf[pos++];
 }
 

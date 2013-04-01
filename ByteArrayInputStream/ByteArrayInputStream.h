@@ -43,6 +43,12 @@ public:
      * Returns the number of bytes that can be read(or skipped over) from this 
      * input stream without blocking by the next caller of a method for this input stream.
      * 
+     * NOTE: This implementation return 1 or 0. It is because the size 
+     * of the array is unsigned int, and this method returns a signed
+     * int, which means there is no way to return the difference between
+     * the current position (can be 0) and the size of the array without
+     * possible overflow. 
+     * 
      * @return 
      */
     virtual int available();
@@ -60,7 +66,7 @@ public:
     virtual bool markSupported();
 
     /**
-     * Using the parent read.
+     * Using the parent's read.
      */
     using InputStream::read;
 
