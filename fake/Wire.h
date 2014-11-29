@@ -34,4 +34,6 @@ public:
   }
 };
 
+extern FakeWire Wire;
+
 #endif /* __ARDUINO_IO_FAKE_WIRE_H__ */

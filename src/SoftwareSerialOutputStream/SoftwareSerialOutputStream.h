@@ -20,11 +20,11 @@ protected:
     /* 
      * The software serial where data is written.
      */
-    SoftwareSerial *serial;
+    SoftwareSerial *softwareSerial;
 
 public:
 
-    SoftwareSerialOutputStream(SoftwareSerial *serial, unsigned int boundRate);
+    SoftwareSerialOutputStream(SoftwareSerial *softwareSerial, unsigned int boundRate);
 
     /**
      * Writes the specified unsigned char to this output stream.

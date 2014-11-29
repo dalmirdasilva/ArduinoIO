@@ -11,14 +11,14 @@
 
 #include "SoftwareSerialOutputStream.h"
 
-SoftwareSerialOutputStream::SoftwareSerialOutputStream(SoftwareSerial *serial,
+SoftwareSerialOutputStream::SoftwareSerialOutputStream(SoftwareSerial *softwareSerial,
         unsigned int boundRate) :
-        serial(serial) {
-    serial->begin(boundRate);
+        softwareSerial(softwareSerial) {
+    softwareSerial->begin(boundRate);
 }
 
 void SoftwareSerialOutputStream::write(unsigned char b) {
-    serial->write(b);
+    softwareSerial->write(b);
 }
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_OUTPUT_STREAM_CPP__ */

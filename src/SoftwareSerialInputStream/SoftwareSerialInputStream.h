@@ -20,7 +20,7 @@ protected:
     /**
      * The software serial where the data will be read.
      */
-    SoftwareSerial *serial;
+    SoftwareSerial *softwareSerial;
 
 public:
 
@@ -30,7 +30,7 @@ public:
      * @param serial
      * @param boundRate
      */
-    SoftwareSerialInputStream(SoftwareSerial *serial, unsigned int boundRate);
+    SoftwareSerialInputStream(SoftwareSerial *softwareSerial, unsigned int boundRate);
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

@@ -11,18 +11,18 @@
 
 #include "SoftwareSerialInputStream.h"
 
-SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *serial,
+SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *softwareSerial,
         unsigned int boundRate) :
-        serial(serial) {
-    serial->begin(boundRate);
+        softwareSerial(softwareSerial) {
+    softwareSerial->begin(boundRate);
 }
 
 int SoftwareSerialInputStream::available() {
-    serial->available();
+    softwareSerial->available();
 }
 
 int SoftwareSerialInputStream::read() {
-    return serial->read();
+    return softwareSerial->read();
 }
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_CPP__ */

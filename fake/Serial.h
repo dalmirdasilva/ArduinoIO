@@ -16,4 +16,6 @@ public:
   int available();
 };
 
+extern FakeSerial Serial;
+
 #endif /* __ARDUINO_IO_FAKE_SERIAL_H__ */

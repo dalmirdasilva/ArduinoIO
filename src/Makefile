@@ -86,6 +86,7 @@ SOURCES = \
   ../spec/Asserter.cpp \
   ../fake/Wire.cpp \
   ../fake/Serial.cpp \
+  ../fake/avr/pgmspace.cpp \
   spec.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
