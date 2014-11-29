@@ -2,144 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41aed532-812b-4de5-9917-1a5d791ac6cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WireOutputStream/keywords" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Arduino.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Arduino.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ArduinoIO.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Asserter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Asserter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fake/SoftwareSerial.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fake/Wire.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fake/Wire.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WireOutputStream/WireOutputStream.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ds.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fake/avr/pgmspace.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/spec.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/spec.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedInputStream/BufferedInputStream.cpp" afterPath="$PROJECT_DIR$/src/BufferedInputStream/BufferedInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedInputStream/BufferedInputStream.h" afterPath="$PROJECT_DIR$/src/BufferedInputStream/BufferedInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/BufferedInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedOutputStream/BufferedOutputStream.cpp" afterPath="$PROJECT_DIR$/src/BufferedOutputStream/BufferedOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedOutputStream/BufferedOutputStream.h" afterPath="$PROJECT_DIR$/src/BufferedOutputStream/BufferedOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BufferedOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/BufferedOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayInputStream/ByteArrayInputStream.cpp" afterPath="$PROJECT_DIR$/src/ByteArrayInputStream/ByteArrayInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayInputStream/ByteArrayInputStream.h" afterPath="$PROJECT_DIR$/src/ByteArrayInputStream/ByteArrayInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ByteArrayInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayOutputStream/ByteArrayOutputStream.cpp" afterPath="$PROJECT_DIR$/src/ByteArrayOutputStream/ByteArrayOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayOutputStream/ByteArrayOutputStream.h" afterPath="$PROJECT_DIR$/src/ByteArrayOutputStream/ByteArrayOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArrayOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ByteArrayOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArraySeekableInputStream/ByteArraySeekableInputStream.cpp" afterPath="$PROJECT_DIR$/src/ByteArraySeekableInputStream/ByteArraySeekableInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArraySeekableInputStream/ByteArraySeekableInputStream.h" afterPath="$PROJECT_DIR$/src/ByteArraySeekableInputStream/ByteArraySeekableInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ByteArraySeekableInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ByteArraySeekableInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Closeable/Closeable.cpp" afterPath="$PROJECT_DIR$/src/Closeable/Closeable.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Closeable/Closeable.h" afterPath="$PROJECT_DIR$/src/Closeable/Closeable.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Closeable/keywords.txt" afterPath="$PROJECT_DIR$/src/Closeable/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInput/DataInput.cpp" afterPath="$PROJECT_DIR$/src/DataInput/DataInput.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInput/DataInput.h" afterPath="$PROJECT_DIR$/src/DataInput/DataInput.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInput/keywords.txt" afterPath="$PROJECT_DIR$/src/DataInput/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInputStream/DataInputStream.cpp" afterPath="$PROJECT_DIR$/src/DataInputStream/DataInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInputStream/DataInputStream.h" afterPath="$PROJECT_DIR$/src/DataInputStream/DataInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/DataInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutput/DataOutput.cpp" afterPath="$PROJECT_DIR$/src/DataOutput/DataOutput.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutput/DataOutput.h" afterPath="$PROJECT_DIR$/src/DataOutput/DataOutput.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutput/keywords.txt" afterPath="$PROJECT_DIR$/src/DataOutput/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutputStream/DataOutputStream.cpp" afterPath="$PROJECT_DIR$/src/DataOutputStream/DataOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutputStream/DataOutputStream.h" afterPath="$PROJECT_DIR$/src/DataOutputStream/DataOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DataOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/DataOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromInputStream/ExternalEepromInputStream.cpp" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/ExternalEepromInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromInputStream/ExternalEepromInputStream.h" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/ExternalEepromInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromInputStream/examples/reading_to_serial/Makefile" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/examples/reading_to_serial/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromInputStream/examples/reading_to_serial/reading_to_serial.ino" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/examples/reading_to_serial/reading_to_serial.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/ExternalEepromOutputStream.cpp" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/ExternalEepromOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/ExternalEepromOutputStream.h" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/ExternalEepromOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/examples/writing_a_font/Makefile" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/examples/writing_a_font/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/examples/writing_a_font/writing_a_font.ino" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/examples/writing_a_font/writing_a_font.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/examples/zeroing_eeprom/Makefile" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/examples/zeroing_eeprom/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/examples/zeroing_eeprom/zeroing_eeprom.ino" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/examples/zeroing_eeprom/zeroing_eeprom.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.cpp" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.h" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromSeekableInputStream/examples/reading_to_serial/Makefile" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/examples/reading_to_serial/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromSeekableInputStream/examples/reading_to_serial/reading_to_serial.ino" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/examples/reading_to_serial/reading_to_serial.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ExternalEepromSeekableInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterInputStream/FilterInputStream.cpp" afterPath="$PROJECT_DIR$/src/FilterInputStream/FilterInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterInputStream/FilterInputStream.h" afterPath="$PROJECT_DIR$/src/FilterInputStream/FilterInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/FilterInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterOutputStream/FilterOutputStream.cpp" afterPath="$PROJECT_DIR$/src/FilterOutputStream/FilterOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterOutputStream/FilterOutputStream.h" afterPath="$PROJECT_DIR$/src/FilterOutputStream/FilterOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FilterOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/FilterOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialInputStream/HardwareSerialInputStream.cpp" afterPath="$PROJECT_DIR$/src/HardwareSerialInputStream/HardwareSerialInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialInputStream/HardwareSerialInputStream.h" afterPath="$PROJECT_DIR$/src/HardwareSerialInputStream/HardwareSerialInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/HardwareSerialInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialOutputStream/HardwareSerialOutputStream.cpp" afterPath="$PROJECT_DIR$/src/HardwareSerialOutputStream/HardwareSerialOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialOutputStream/HardwareSerialOutputStream.h" afterPath="$PROJECT_DIR$/src/HardwareSerialOutputStream/HardwareSerialOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HardwareSerialOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/HardwareSerialOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InputStream/InputStream.cpp" afterPath="$PROJECT_DIR$/src/InputStream/InputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InputStream/InputStream.h" afterPath="$PROJECT_DIR$/src/InputStream/InputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/InputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OutputStream/OutputStream.cpp" afterPath="$PROJECT_DIR$/src/OutputStream/OutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OutputStream/OutputStream.h" afterPath="$PROJECT_DIR$/src/OutputStream/OutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/OutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceInputStream/PgmspaceInputStream.cpp" afterPath="$PROJECT_DIR$/src/PgmspaceInputStream/PgmspaceInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceInputStream/PgmspaceInputStream.h" afterPath="$PROJECT_DIR$/src/PgmspaceInputStream/PgmspaceInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/PgmspaceInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.cpp" afterPath="$PROJECT_DIR$/src/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.h" afterPath="$PROJECT_DIR$/src/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceSeekableInputStream/examples/reading_from_pgm/reading_from_pgm.ino" afterPath="$PROJECT_DIR$/src/PgmspaceSeekableInputStream/examples/reading_from_pgm/reading_from_pgm.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PgmspaceSeekableInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/PgmspaceSeekableInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccess/RandomAccess.cpp" afterPath="$PROJECT_DIR$/src/RandomAccess/RandomAccess.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccess/RandomAccess.h" afterPath="$PROJECT_DIR$/src/RandomAccess/RandomAccess.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccess/keywords.txt" afterPath="$PROJECT_DIR$/src/RandomAccess/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessByteArray/RandomAccessByteArray.cpp" afterPath="$PROJECT_DIR$/src/RandomAccessByteArray/RandomAccessByteArray.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessByteArray/RandomAccessByteArray.h" afterPath="$PROJECT_DIR$/src/RandomAccessByteArray/RandomAccessByteArray.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessByteArray/keywords.txt" afterPath="$PROJECT_DIR$/src/RandomAccessByteArray/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessExternalEeprom/RandomAccessExternalEeprom.cpp" afterPath="$PROJECT_DIR$/src/RandomAccessExternalEeprom/RandomAccessExternalEeprom.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessExternalEeprom/RandomAccessExternalEeprom.h" afterPath="$PROJECT_DIR$/src/RandomAccessExternalEeprom/RandomAccessExternalEeprom.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessExternalEeprom/keywords.txt" afterPath="$PROJECT_DIR$/src/RandomAccessExternalEeprom/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessResource/RandomAccessResource.cpp" afterPath="$PROJECT_DIR$/src/RandomAccessResource/RandomAccessResource.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessResource/RandomAccessResource.h" afterPath="$PROJECT_DIR$/src/RandomAccessResource/RandomAccessResource.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RandomAccessResource/keywords.txt" afterPath="$PROJECT_DIR$/src/RandomAccessResource/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceInputStream/ResourceInputStream.cpp" afterPath="$PROJECT_DIR$/src/ResourceInputStream/ResourceInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceInputStream/ResourceInputStream.h" afterPath="$PROJECT_DIR$/src/ResourceInputStream/ResourceInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceInputStream/examples/reading_to_serial/Makefile" afterPath="$PROJECT_DIR$/src/ResourceInputStream/examples/reading_to_serial/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ResourceInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceOutputStream/ResourceOutputStream.cpp" afterPath="$PROJECT_DIR$/src/ResourceOutputStream/ResourceOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceOutputStream/ResourceOutputStream.h" afterPath="$PROJECT_DIR$/src/ResourceOutputStream/ResourceOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceOutputStream/examples/writing_font_to_resource/Makefile" afterPath="$PROJECT_DIR$/src/ResourceOutputStream/examples/writing_font_to_resource/Makefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceOutputStream/examples/writing_font_to_resource/writing_font_to_resource.ino" afterPath="$PROJECT_DIR$/src/ResourceOutputStream/examples/writing_font_to_resource/writing_font_to_resource.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ResourceOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceSeekableInputStream/ResourceSeekableInputStream.cpp" afterPath="$PROJECT_DIR$/src/ResourceSeekableInputStream/ResourceSeekableInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceSeekableInputStream/ResourceSeekableInputStream.h" afterPath="$PROJECT_DIR$/src/ResourceSeekableInputStream/ResourceSeekableInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ResourceSeekableInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/ResourceSeekableInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Seekable/Seekable.cpp" afterPath="$PROJECT_DIR$/src/Seekable/Seekable.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Seekable/Seekable.h" afterPath="$PROJECT_DIR$/src/Seekable/Seekable.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Seekable/keywords.txt" afterPath="$PROJECT_DIR$/src/Seekable/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SeekableInputStream/SeekableInputStream.cpp" afterPath="$PROJECT_DIR$/src/SeekableInputStream/SeekableInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SeekableInputStream/SeekableInputStream.h" afterPath="$PROJECT_DIR$/src/SeekableInputStream/SeekableInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SeekableInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/SeekableInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialInputStream/SerialInputStream.cpp" afterPath="$PROJECT_DIR$/src/SerialInputStream/SerialInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialInputStream/SerialInputStream.h" afterPath="$PROJECT_DIR$/src/SerialInputStream/SerialInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialInputStream/examples/echo/echo.ino" afterPath="$PROJECT_DIR$/src/SerialInputStream/examples/echo/echo.ino" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/SerialInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialOutputStream/SerialOutputStream.cpp" afterPath="$PROJECT_DIR$/src/SerialOutputStream/SerialOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialOutputStream/SerialOutputStream.h" afterPath="$PROJECT_DIR$/src/SerialOutputStream/SerialOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SerialOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/SerialOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialInputStream/SoftwareSerialInputStream.cpp" afterPath="$PROJECT_DIR$/src/SoftwareSerialInputStream/SoftwareSerialInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialInputStream/SoftwareSerialInputStream.h" afterPath="$PROJECT_DIR$/src/SoftwareSerialInputStream/SoftwareSerialInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialInputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/SoftwareSerialInputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialOutputStream/SoftwareSerialOutputStream.cpp" afterPath="$PROJECT_DIR$/src/SoftwareSerialOutputStream/SoftwareSerialOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialOutputStream/SoftwareSerialOutputStream.h" afterPath="$PROJECT_DIR$/src/SoftwareSerialOutputStream/SoftwareSerialOutputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SoftwareSerialOutputStream/keywords.txt" afterPath="$PROJECT_DIR$/src/SoftwareSerialOutputStream/keywords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireInputStream/WireInputStream.cpp" afterPath="$PROJECT_DIR$/src/WireInputStream/WireInputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireInputStream/WireInputStream.h" afterPath="$PROJECT_DIR$/src/WireInputStream/WireInputStream.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireInputStream/keywords" afterPath="$PROJECT_DIR$/fake/Serial.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireOutputSream/WireOutputStream.cpp" afterPath="$PROJECT_DIR$/fake/Serial.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireOutputSream/WireOutputStream.h" afterPath="$PROJECT_DIR$/src/WireOutputStream/WireOutputStream.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WireOutputSream/keywords" afterPath="$PROJECT_DIR$/src/WireInputStream/keywords" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/BufferedInputStream/BufferedInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/BufferedOutputStream/BufferedOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ByteArrayInputStream/ByteArrayInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ByteArrayOutputStream/ByteArrayOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ByteArraySeekableInputStream/ByteArraySeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/Closeable/Closeable.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/DataInput/DataInput.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/DataInputStream/DataInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/DataOutput/DataOutput.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/DataOutputStream/DataOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ExternalEepromInputStream/ExternalEepromInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ExternalEepromOutputStream/ExternalEepromOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/FilterInputStream/FilterInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/FilterOutputStream/FilterOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/HardwareSerialInputStream/HardwareSerialInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/HardwareSerialOutputStream/HardwareSerialOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/InputStream/InputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/OutputStream/OutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/PgmspaceInputStream/PgmspaceInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/RandomAccess/RandomAccess.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/RandomAccessByteArray/RandomAccessByteArray.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/RandomAccessExternalEeprom/RandomAccessExternalEeprom.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/RandomAccessResource/RandomAccessResource.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ResourceInputStream/ResourceInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ResourceOutputStream/ResourceOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/ResourceSeekableInputStream/ResourceSeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/Seekable/Seekable.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/SeekableInputStream/SeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/SerialInputStream/SerialInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/SerialOutputStream/SerialOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/SoftwareSerialInputStream/SoftwareSerialInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/SoftwareSerialOutputStream/SoftwareSerialOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/WireInputStream/WireInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Release/WireOutputSream/WireOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fake/Wire.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/Asserter.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/InputStream/InputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OutputStream/OutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PgmspaceInputStream/PgmspaceInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PgmspaceSeekableInputStream/PgmspaceSeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/RandomAccess/RandomAccess.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/RandomAccessByteArray/RandomAccessByteArray.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/RandomAccessExternalEeprom/RandomAccessExternalEeprom.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/RandomAccessResource/RandomAccessResource.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ResourceInputStream/ResourceInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ResourceOutputStream/ResourceOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ResourceSeekableInputStream/ResourceSeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Seekable/Seekable.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SeekableInputStream/SeekableInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SerialInputStream/SerialInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SerialOutputStream/SerialOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SoftwareSerialInputStream/SoftwareSerialInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SoftwareSerialOutputStream/SoftwareSerialOutputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WireInputStream/WireInputStream.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WireOutputStream/WireOutputStream.o" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BufferedInputStream/BufferedInputStream.o" afterPath="$PROJECT_DIR$/src/BufferedInputStream/BufferedInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BufferedOutputStream/BufferedOutputStream.o" afterPath="$PROJECT_DIR$/src/BufferedOutputStream/BufferedOutputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ByteArrayInputStream/ByteArrayInputStream.o" afterPath="$PROJECT_DIR$/src/ByteArrayInputStream/ByteArrayInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ByteArrayOutputStream/ByteArrayOutputStream.o" afterPath="$PROJECT_DIR$/src/ByteArrayOutputStream/ByteArrayOutputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ByteArraySeekableInputStream/ByteArraySeekableInputStream.o" afterPath="$PROJECT_DIR$/src/ByteArraySeekableInputStream/ByteArraySeekableInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Closeable/Closeable.o" afterPath="$PROJECT_DIR$/src/Closeable/Closeable.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataInput/DataInput.o" afterPath="$PROJECT_DIR$/src/DataInput/DataInput.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataInputStream/DataInputStream.o" afterPath="$PROJECT_DIR$/src/DataInputStream/DataInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataOutput/DataOutput.o" afterPath="$PROJECT_DIR$/src/DataOutput/DataOutput.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataOutputStream/DataOutputStream.o" afterPath="$PROJECT_DIR$/src/DataOutputStream/DataOutputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/External24cl256Eeprom" afterPath="$PROJECT_DIR$/ext/External24cl256Eeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/External24x16Eeprom" afterPath="$PROJECT_DIR$/ext/External24x16Eeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/ExternalByteArrayEeprom" afterPath="$PROJECT_DIR$/ext/ExternalByteArrayEeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ExternalEepromInputStream/ExternalEepromInputStream.o" afterPath="$PROJECT_DIR$/src/ExternalEepromInputStream/ExternalEepromInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ExternalEepromOutputStream/ExternalEepromOutputStream.o" afterPath="$PROJECT_DIR$/src/ExternalEepromOutputStream/ExternalEepromOutputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.o" afterPath="$PROJECT_DIR$/src/ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/ExternalEeprom" afterPath="$PROJECT_DIR$/ext/ExternalEeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/ExternalFileEeprom" afterPath="$PROJECT_DIR$/ext/ExternalFileEeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/ExternalMappedEeprom" afterPath="$PROJECT_DIR$/ext/ExternalMappedEeprom" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FilterInputStream/FilterInputStream.o" afterPath="$PROJECT_DIR$/src/FilterInputStream/FilterInputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FilterOutputStream/FilterOutputStream.o" afterPath="$PROJECT_DIR$/src/FilterOutputStream/FilterOutputStream.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Makefile" afterPath="$PROJECT_DIR$/src/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doxygen.conf" afterPath="$PROJECT_DIR$/doxygen.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ArduinoIO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,7 +109,7 @@
       <file leaf-file-name="Arduino.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arduino.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -175,7 +119,7 @@
       <file leaf-file-name="HardwareSerialInputStream.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HardwareSerialInputStream/HardwareSerialInputStream.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="660">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="792">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -185,7 +129,7 @@
       <file leaf-file-name="HardwareSerialOutputStream.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HardwareSerialOutputStream/HardwareSerialOutputStream.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="684">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -195,48 +139,48 @@
       <file leaf-file-name="Serial.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fake/Serial.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="432">
               <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wire.cpp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fake/Wire.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-              <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serial.cpp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Serial.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fake/Serial.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7122905" vertical-offset="0" max-vertical-offset="358">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoftwareSerial.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fake/SoftwareSerial.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Makefile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doxygen.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doxygen.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="29.52" vertical-offset="12582" max-vertical-offset="32202">
+              <caret line="658" column="30" selection-start-line="658" selection-start-column="30" selection-end-line="658" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1785">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.77253217" vertical-offset="0" max-vertical-offset="2142">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -245,7 +189,7 @@
       <file leaf-file-name="Arduino.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arduino.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="780">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="936">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -255,8 +199,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4235" max-vertical-offset="14460">
-              <caret line="287" column="52" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4302" max-vertical-offset="16452">
+              <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -276,7 +220,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/spec/Asserter.h" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/ext/avr/pgmspace.h" />
         <option value="$PROJECT_DIR$/ext/SoftwareSerial.h" />
         <option value="$PROJECT_DIR$/src/spec.cpp" />
@@ -288,20 +231,23 @@
         <option value="$PROJECT_DIR$/fake/Wire.cpp" />
         <option value="$PROJECT_DIR$/fake/Serial.h" />
         <option value="$PROJECT_DIR$/fake/SoftwareSerial.h" />
-        <option value="$PROJECT_DIR$/src/Makefile" />
         <option value="$PROJECT_DIR$/src/Arduino.cpp" />
         <option value="$PROJECT_DIR$/fake/Serial.cpp" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/HardwareSerialOutputStream/HardwareSerialOutputStream.h" />
         <option value="$PROJECT_DIR$/src/HardwareSerialInputStream/HardwareSerialInputStream.h" />
         <option value="$PROJECT_DIR$/src/Arduino.h" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/doxygen.conf" />
+        <option value="$PROJECT_DIR$/src/Makefile" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="705" />
+    <option name="x" value="1366" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -329,8 +275,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,7 +292,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -356,11 +302,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -370,75 +316,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HardwareSerialOutputStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoIO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HardwareSerialInputStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoIO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoIO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoIO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -468,93 +350,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -597,6 +398,87 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -613,31 +495,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="705" extended-state="6" />
-    <editor active="true" />
+    <frame x="1366" y="24" width="1920" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Go" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -660,11 +543,90 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Arduino.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HardwareSerialInputStream/HardwareSerialInputStream.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="792">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HardwareSerialOutputStream/HardwareSerialOutputStream.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="684">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fake/Serial.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="432">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fake/Wire.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="144">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fake/Serial.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="414">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fake/SoftwareSerial.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="558">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="2142">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arduino.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="936">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5166" max-vertical-offset="17352">
+          <caret line="287" column="52" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SeekableInputStream/keywords.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46391752" vertical-offset="0" max-vertical-offset="582">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28350514" vertical-offset="0" max-vertical-offset="582">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="761" max-vertical-offset="1320">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,15 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="735">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96601075" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,15 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1785">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4235" max-vertical-offset="14460">
-          <caret line="287" column="52" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4302" max-vertical-offset="16452">
+          <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -862,8 +794,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fake/Serial.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7122905" vertical-offset="0" max-vertical-offset="358">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doxygen.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.52" vertical-offset="12582" max-vertical-offset="32202">
+          <caret line="658" column="30" selection-start-line="658" selection-start-column="30" selection-end-line="658" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77253217" vertical-offset="0" max-vertical-offset="2142">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding />
         </state>
       </provider>

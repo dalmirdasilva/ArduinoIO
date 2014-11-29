@@ -103,7 +103,7 @@ $(MAIN): $(OBJECTS)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 clean:
-	$(RM) *.o *~ spec/*.o spec/*~ $(MAIN)
+	$(RM) $(MAIN); find . -name "*.o" -exec rm -rf {} \;
 
 depend: $(SRCS)
 	makedepend $(INCLUDES) $^
