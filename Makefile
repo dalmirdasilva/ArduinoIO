@@ -1,40 +1,40 @@
 ARDUINO_LIB_PATH=/usr/share/arduino/libraries
 LIB_LIST=BufferedInputStream \
-	DataOutput \
-	FilterInputStream \
-	RandomAccessExternalEeprom \
-	BufferedOutputStream \
-	DataOutputStream \
-	FilterOutputStream \
-	RandomAccessResource \
-	ByteArrayInputStream \
-	InputStream \
-	ResourceInputStream \
-	ByteArrayOutputStream \
-	ResourceOutputStream \
-	ByteArraySeekableInputStream \
-	ResourceSeekableInputStream \
-	Closeable \
-	ExternalEepromInputStream \
-	OutputStream \
-	Seekable \
-	DataInput \
-	ExternalEepromOutputStream \
-	RandomAccess \
-	SeekableInputStream \
-	DataInputStream \
-	ExternalEepromSeekableInputStream \
-	RandomAccessByteArray \
-	SerialInputStream \
-	SoftwareSerialInputStream \
-	SerialOutputStream \
-	SoftwareSerialOutputStream \
-	HardwareSerialOutputStream \
-	HardwareSerialInputStream \
-	PgmspaceInputStream \
-	PgmspaceSeekableInputStream \
-	WireInputStream \
-	WireOutputStream
+	src/DataOutput \
+	src/FilterInputStream \
+	src/RandomAccessExternalEeprom \
+	src/BufferedOutputStream \
+	src/DataOutputStream \
+	src/FilterOutputStream \
+	src/RandomAccessResource \
+	src/ByteArrayInputStream \
+	src/InputStream \
+	src/ResourceInputStream \
+	src/ByteArrayOutputStream \
+	src/ResourceOutputStream \
+	src/ByteArraySeekableInputStream \
+	src/ResourceSeekableInputStream \
+	src/Closeable \
+	src/ExternalEepromInputStream \
+	src/OutputStream \
+	src/Seekable \
+	src/DataInput \
+	src/ExternalEepromOutputStream \
+	src/RandomAccess \
+	src/SeekableInputStream \
+	src/DataInputStream \
+	src/ExternalEepromSeekableInputStream \
+	src/RandomAccessByteArray \
+	src/SerialInputStream \
+	src/SoftwareSerialInputStream \
+	src/SerialOutputStream \
+	src/SoftwareSerialOutputStream \
+	src/HardwareSerialOutputStream \
+	src/HardwareSerialInputStream \
+	src/PgmspaceInputStream \
+	src/PgmspaceSeekableInputStream \
+	src/WireInputStream \
+	src/WireOutputStream
 SOURCE_PATH=`pwd`
 
 all: 
