@@ -87,7 +87,8 @@ SOURCES = \
   ../fake/Wire.cpp \
   ../fake/Serial.cpp \
   ../fake/avr/pgmspace.cpp \
-  spec.cpp
+  spec.cpp \
+  ../spec/ByteArrayOutputStreamSpec.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 MAIN = spec_bin
@@ -104,7 +105,7 @@ $(MAIN): $(OBJECTS)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 clean:
-	$(RM) $(MAIN); find . -name "*.o" -exec rm -rf {} \;
+	$(RM) $(MAIN); find ../ -name "*.o" -exec rm -rf {} \;
 
 depend: $(SRCS)
 	makedepend $(INCLUDES) $^
