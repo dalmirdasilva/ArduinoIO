@@ -8,7 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include WireOutputSream/subdir.mk
+-include WireOutputStream/subdir.mk
 -include WireInputStream/subdir.mk
 -include SoftwareSerialOutputStream/subdir.mk
 -include SoftwareSerialInputStream/subdir.mk

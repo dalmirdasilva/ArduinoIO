@@ -1,46 +1,49 @@
 WireInputStream/WireInputStream.d: ../WireInputStream/WireInputStream.cpp \
  ../WireInputStream/WireInputStream.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/binary.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/WCharacter.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/WString.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/Stream.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/Print.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/new.h \
- /usr/share/arduino/hardware/arduino/variants/mega/pins_arduino.h \
- /usr/share/arduino/libraries/Wire/Wire.h \
- /usr/share/arduino/hardware/arduino/cores/arduino/Stream.h \
- /storage/microcontroller/arduino/library/io/InputStream/InputStream.h \
- /storage/microcontroller/arduino/library/io/Closeable/Closeable.h
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Arduino.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/binary.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/WCharacter.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/WString.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/HardwareSerial.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Stream.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Print.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Printable.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/USBAPI.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Arduino.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/variants/standard/pins_arduino.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/libraries/Wire/Wire.h \
+ /work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Stream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h
 
 ../WireInputStream/WireInputStream.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Arduino.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/binary.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/binary.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/WCharacter.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/WCharacter.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/WString.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/WString.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/HardwareSerial.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/Stream.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Stream.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/Print.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Print.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/Printable.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Printable.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/new.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/USBAPI.h:
 
-/usr/share/arduino/hardware/arduino/variants/mega/pins_arduino.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Arduino.h:
 
-/usr/share/arduino/libraries/Wire/Wire.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/variants/standard/pins_arduino.h:
 
-/usr/share/arduino/hardware/arduino/cores/arduino/Stream.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/libraries/Wire/Wire.h:
 
-/storage/microcontroller/arduino/library/io/InputStream/InputStream.h:
+/work/opensource/personal/microcontroller/arduino/core/ArduinoCore/Stream.h:
 
-/storage/microcontroller/arduino/library/io/Closeable/Closeable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h:
+
+/work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h:

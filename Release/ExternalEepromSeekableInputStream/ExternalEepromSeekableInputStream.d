@@ -1,23 +1,23 @@
 ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.d: \
  ../ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.cpp \
  ../ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.h \
- /storage/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h \
- /storage/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h \
- /storage/microcontroller/arduino/library/io/Seekable/Seekable.h \
- /storage/microcontroller/arduino/library/io/InputStream/InputStream.h \
- /storage/microcontroller/arduino/library/io/Closeable/Closeable.h \
- /storage/microcontroller/arduino/library/io/ExternalEepromInputStream/ExternalEepromInputStream.h
+ /work/opensource/personal/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Seekable/Seekable.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/ExternalEepromInputStream/ExternalEepromInputStream.h
 
 ../ExternalEepromSeekableInputStream/ExternalEepromSeekableInputStream.h:
 
-/storage/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h:
+/work/opensource/personal/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h:
 
-/storage/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h:
 
-/storage/microcontroller/arduino/library/io/Seekable/Seekable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/Seekable/Seekable.h:
 
-/storage/microcontroller/arduino/library/io/InputStream/InputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h:
 
-/storage/microcontroller/arduino/library/io/Closeable/Closeable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h:
 
-/storage/microcontroller/arduino/library/io/ExternalEepromInputStream/ExternalEepromInputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/ExternalEepromInputStream/ExternalEepromInputStream.h:

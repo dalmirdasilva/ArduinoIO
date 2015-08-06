@@ -1,20 +1,20 @@
 ByteArraySeekableInputStream/ByteArraySeekableInputStream.d: \
  ../ByteArraySeekableInputStream/ByteArraySeekableInputStream.cpp \
  ../ByteArraySeekableInputStream/ByteArraySeekableInputStream.h \
- /storage/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h \
- /storage/microcontroller/arduino/library/io/Seekable/Seekable.h \
- /storage/microcontroller/arduino/library/io/InputStream/InputStream.h \
- /storage/microcontroller/arduino/library/io/Closeable/Closeable.h \
- /storage/microcontroller/arduino/library/io/ByteArrayInputStream/ByteArrayInputStream.h
+ /work/opensource/personal/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Seekable/Seekable.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/ByteArrayInputStream/ByteArrayInputStream.h
 
 ../ByteArraySeekableInputStream/ByteArraySeekableInputStream.h:
 
-/storage/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/SeekableInputStream/SeekableInputStream.h:
 
-/storage/microcontroller/arduino/library/io/Seekable/Seekable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/Seekable/Seekable.h:
 
-/storage/microcontroller/arduino/library/io/InputStream/InputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/InputStream/InputStream.h:
 
-/storage/microcontroller/arduino/library/io/Closeable/Closeable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h:
 
-/storage/microcontroller/arduino/library/io/ByteArrayInputStream/ByteArrayInputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/ByteArrayInputStream/ByteArrayInputStream.h:

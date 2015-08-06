@@ -1,14 +1,14 @@
 ExternalEepromOutputStream/ExternalEepromOutputStream.d: \
  ../ExternalEepromOutputStream/ExternalEepromOutputStream.cpp \
  ../ExternalEepromOutputStream/ExternalEepromOutputStream.h \
- /storage/microcontroller/arduino/library/io/OutputStream/OutputStream.h \
- /storage/microcontroller/arduino/library/io/Closeable/Closeable.h \
- /storage/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h
+ /work/opensource/personal/microcontroller/arduino/library/io/OutputStream/OutputStream.h \
+ /work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h \
+ /work/opensource/personal/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h
 
 ../ExternalEepromOutputStream/ExternalEepromOutputStream.h:
 
-/storage/microcontroller/arduino/library/io/OutputStream/OutputStream.h:
+/work/opensource/personal/microcontroller/arduino/library/io/OutputStream/OutputStream.h:
 
-/storage/microcontroller/arduino/library/io/Closeable/Closeable.h:
+/work/opensource/personal/microcontroller/arduino/library/io/Closeable/Closeable.h:
 
-/storage/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h:
+/work/opensource/personal/microcontroller/arduino/driver/memory/ExternalEeprom/ExternalEeprom.h:
