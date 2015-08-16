@@ -13,8 +13,8 @@
 #include "ByteArrayOutputStream.h"
 
 ByteArrayOutputStream::ByteArrayOutputStream(unsigned char* buf,
-        unsigned int count) :
-        buf(buf), count(count) {
+        unsigned int count)
+        : buf(buf), count(count) {
     pos = 0;
 }
 

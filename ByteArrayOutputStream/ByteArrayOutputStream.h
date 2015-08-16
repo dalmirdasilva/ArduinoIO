@@ -12,10 +12,10 @@
 
 #include <OutputStream.h>
 
-class ByteArrayOutputStream : public OutputStream {
+class ByteArrayOutputStream: public OutputStream {
 protected:
 
-    /* 
+    /*
      * The buffer where data is stored.
      */
     unsigned char* buf;
