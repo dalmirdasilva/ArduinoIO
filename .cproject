@@ -81,6 +81,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SoftwareSerialOutputStream}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/WireInputStream}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/WireOutputStream}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoDevice/EepromBasedWiredDevice}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoDevice/WiredDevice}&quot;"/>
 								</option>
 								<inputType id="de.innot.avreclipse.cppcompiler.input.1791913115" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
@@ -114,4 +116,5 @@
 			<resource resourceType="PROJECT" workspacePath="/ArduinoIO"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
