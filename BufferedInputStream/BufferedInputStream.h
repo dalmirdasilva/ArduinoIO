@@ -26,7 +26,7 @@
 
 #include <FilterInputStream.h>
 
-class BufferedInputStream : public FilterInputStream {
+class BufferedInputStream: public FilterInputStream {
 
     /**
      * The size of the buffer.
@@ -67,6 +67,11 @@ protected:
     int pos;
 
     /**
+     * Flag to determine if there is a marker on this input stream.
+     */
+    bool marked;
+
+    /**
      * The value of the <code>pos</code> field at the time the last
      * <code>mark</code> method was called.
      * <p>
@@ -92,11 +97,6 @@ protected:
      */
     int markpos;
 
-    /**
-     * Flag to determine if there is a marker on this input stream.
-     */
-    bool marked;
-
 public:
 
     /**
@@ -107,6 +107,12 @@ public:
      * @param size
      */
     BufferedInputStream(InputStream* in, unsigned char* buf, int size);
+
+    /**
+     * Virtual destructor.
+     */
+    virtual ~BufferedInputStream() {
+    }
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

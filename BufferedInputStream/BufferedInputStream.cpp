@@ -21,17 +21,10 @@
  * the contained input stream.
  */
 
-#ifndef __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__ 1
-
 #include "BufferedInputStream.h"
 
-BufferedInputStream::BufferedInputStream(InputStream* in,
-        unsigned char* buf, int size) :
-        FilterInputStream(in), buf(buf) {
-    this->size = size;
-    count = 0;
-    pos = 0;
+BufferedInputStream::BufferedInputStream(InputStream* in, unsigned char* buf, int size)
+        : FilterInputStream(in), size(size), buf(buf), count(0), pos(0), marked(false), markpos(0) {
 }
 
 int BufferedInputStream::available() {
@@ -159,5 +152,3 @@ unsigned int BufferedInputStream::skip(unsigned int n) {
     skiped = buffered + in->skip(n - buffered);
     return skiped;
 }
-
-#endif /* __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__ */

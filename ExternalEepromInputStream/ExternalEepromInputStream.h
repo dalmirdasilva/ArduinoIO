@@ -13,8 +13,14 @@
 #include <InputStream.h>
 #include <ExternalEeprom.h>
 
-class ExternalEepromInputStream : public virtual InputStream {
+class ExternalEepromInputStream: public virtual InputStream {
+
 protected:
+
+    /**
+     * When asking for available, this is the max number to return.
+     */
+    const int maxAvailableChunk;
 
     /* 
      * The externalEeprom where data is stored.
@@ -44,6 +50,12 @@ public:
      * @param externalEeprom    The externalEeprom where data is stored.
      */
     ExternalEepromInputStream(ExternalEeprom* externalEeprom);
+
+    /**
+     * Virtual destructor.
+     */
+    virtual ~ExternalEepromInputStream() {
+    }
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

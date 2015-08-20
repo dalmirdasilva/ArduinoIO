@@ -9,16 +9,10 @@
  * system for each unsigned char written.
  */
 
-#ifndef __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_CPP__
-#define __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_CPP__ 1
-
 #include "BufferedOutputStream.h"
 
-BufferedOutputStream::BufferedOutputStream(OutputStream* out,
-        unsigned char* buf, int size) :
-        FilterOutputStream(out), buf(buf) {
-    this->size = size;
-    count = 0;
+BufferedOutputStream::BufferedOutputStream(OutputStream* out, unsigned char* buf, int size)
+        : FilterOutputStream(out), buf(buf), size(size), count(0) {
 }
 
 void BufferedOutputStream::write(unsigned char b) {
@@ -33,6 +27,7 @@ void BufferedOutputStream::write(unsigned char* b, int len) {
 }
 
 void BufferedOutputStream::write(unsigned char* b, int off, int len) {
+
     /*
      * If the request length exceeds the size of the output buffer,
      * flush the output buffer and then write the data directly.
@@ -68,5 +63,3 @@ void BufferedOutputStream::flushBuffer() {
         count = 0;
     }
 }
-
-#endif /* __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_CPP__ */

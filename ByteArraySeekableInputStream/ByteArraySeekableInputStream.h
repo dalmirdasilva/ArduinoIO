@@ -15,6 +15,7 @@
 
 class ByteArraySeekableInputStream : public SeekableInputStream,
         public ByteArrayInputStream {
+
 public:
 
     ByteArraySeekableInputStream(unsigned char* buf, unsigned int count);

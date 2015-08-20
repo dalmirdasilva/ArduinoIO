@@ -13,6 +13,7 @@
 #include <OutputStream.h>
 
 class ByteArrayOutputStream: public OutputStream {
+
 protected:
 
     /*
@@ -39,6 +40,12 @@ public:
      * @param count
      */
     ByteArrayOutputStream(unsigned char* buf, unsigned int count);
+
+    /**
+     * Virtual destructor.
+     */
+    virtual ~ByteArrayOutputStream() {
+    }
 
     /**
      * Resets the count field of this unsigned char array output stream to zero.

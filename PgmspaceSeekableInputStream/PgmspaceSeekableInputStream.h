@@ -12,12 +12,16 @@
 
 #include <SeekableInputStream.h>
 #include <PgmspaceInputStream.h>
+#include <avr/pgmspace.h>
 
-class PgmspaceSeekableInputStream : public SeekableInputStream,
-        public PgmspaceInputStream {
+class PgmspaceSeekableInputStream: public SeekableInputStream, public PgmspaceInputStream {
+
 public:
 
     PgmspaceSeekableInputStream(char PROGMEM* buf, unsigned int count);
+
+    virtual ~PgmspaceSeekableInputStream() {
+    }
 
     virtual void seek(unsigned int pos);
 };

@@ -13,6 +13,7 @@
 #include <InputStream.h>
 
 class ByteArrayInputStream : public virtual InputStream {
+
 protected:
 
     /* 
@@ -38,6 +39,12 @@ protected:
 public:
 
     ByteArrayInputStream(unsigned char* buf, unsigned int count);
+
+    /**
+     * Virtual destructor.
+     */
+    virtual ~ByteArrayInputStream() {
+    }
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

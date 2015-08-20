@@ -7,24 +7,18 @@
  * externalEeprom. 
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_CPP__ 1
-
 #include "ExternalEepromInputStream.h"
 
-ExternalEepromInputStream::ExternalEepromInputStream(
-        ExternalEeprom* externalEeprom) :
-        externalEeprom(externalEeprom) {
-    markpos = 0;
-    pos = 0;
-    externalEepromSize = externalEeprom->getDeviceSize();
+ExternalEepromInputStream::ExternalEepromInputStream(ExternalEeprom* externalEeprom)
+        : maxAvailableChunk(0x08), externalEeprom(externalEeprom), pos(0), markpos(0), externalEepromSize(externalEeprom->getDeviceSize()) {
 }
 
 int ExternalEepromInputStream::available() {
-    if (externalEepromSize > pos) {
-        return 1;
+    int room = externalEepromSize - pos;
+    if (room > maxAvailableChunk) {
+        return maxAvailableChunk;
     }
-    return 0;
+    return room;
 }
 
 void ExternalEepromInputStream::mark() {
@@ -44,15 +38,13 @@ int ExternalEepromInputStream::read() {
 
 int ExternalEepromInputStream::read(unsigned char* b, int off, int len) {
     unsigned int available = (externalEepromSize - pos);
-    int cnt;
+    int total;
     len = (int) ((unsigned int) len > available) ? available : len;
-    cnt = externalEeprom->readBytes(pos, &b[off], len);
-    pos += cnt;
-    return cnt;
+    total = externalEeprom->readBytes(pos, &b[off], len);
+    pos += total;
+    return total;
 }
 
 void ExternalEepromInputStream::reset() {
     pos = markpos;
 }
-
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_CPP__ */

@@ -14,7 +14,8 @@
 
 #include <FilterOutputStream.h>
 
-class BufferedOutputStream : public FilterOutputStream {
+class BufferedOutputStream: public FilterOutputStream {
+
 protected:
 
     /**
@@ -46,6 +47,11 @@ public:
      * @param   size   the buffer size.
      */
     BufferedOutputStream(OutputStream* out, unsigned char* buf, int size);
+
+    /**
+     * Virtual destructor.
+     */
+    virtual ~BufferedOutputStream();
 
     /**
      * Writes the specified unsigned char to this buffered output stream.
