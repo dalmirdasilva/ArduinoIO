@@ -1,24 +1,19 @@
 /**
  * Arduino IO
  * 
- * ExternalEepromOutputStream
+ * InternalEepromOutputStream
  *
  * A resource output stream is an output stream for writing data to an 
- * ExternalEeprom.
+ * internal EEPROM.
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ 1
+#ifndef __ARDUINO_IO_INTERNAL_EEPROM_OUTPUT_STREAM_H__
+#define __ARDUINO_IO_INTERNAL_EEPROM_OUTPUT_STREAM_H__ 1
 
 #include <OutputStream.h>
-#include <ExternalEeprom.h>
+#include <avr/eeprom.h>
 
-class ExternalEepromOutputStream : public OutputStream {
-
-    /**
-     * The associated eeprom.
-     */
-    ExternalEeprom* externalEeprom;
+class InternalEepromOutputStream : public OutputStream {
 
     /**
      * Current eeprom position.
@@ -29,13 +24,8 @@ public:
 
     /**
      * Public constructor.
-     * 
-     * @param externalEeprom
      */
-    ExternalEepromOutputStream(ExternalEeprom* externalEeprom);
-
-    virtual ~ExternalEepromOutputStream() {
-    }
+    InternalEepromOutputStream();
 
     /**
      * Using parent write.
@@ -60,4 +50,4 @@ public:
     virtual void write(unsigned char* b, int off, int len);
 };
 
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ */
+#endif /* __ARDUINO_IO_INTERNAL_EEPROM_OUTPUT_STREAM_H__ */
