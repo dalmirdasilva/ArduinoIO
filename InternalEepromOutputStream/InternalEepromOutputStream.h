@@ -12,7 +12,7 @@
 
 #include <OutputStream.h>
 #include <avr/eeprom.h>
-
+#include <EEPROM.h>
 class InternalEepromOutputStream : public OutputStream {
 
     /**
