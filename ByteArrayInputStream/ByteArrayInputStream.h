@@ -41,12 +41,6 @@ public:
     ByteArrayInputStream(unsigned char* buf, unsigned int count);
 
     /**
-     * Virtual destructor.
-     */
-    virtual ~ByteArrayInputStream() {
-    }
-
-    /**
      * Returns the number of bytes that can be read(or skipped over) from this 
      * input stream without blocking by the next caller of a method for this input stream.
      * 

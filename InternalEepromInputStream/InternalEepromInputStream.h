@@ -21,17 +21,17 @@ protected:
      */
     const int maxAvailableChunk;
 
-    /*
+    /**
      * Current position
      */
     unsigned int pos;
 
-    /*
+    /**
      * The currently marked position in the stream.
      */
     unsigned int markpos;
 
-    /*
+    /**
      * The size of the eeprom.
      */
     unsigned int eepromSize;
