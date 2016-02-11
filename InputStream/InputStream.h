@@ -53,7 +53,7 @@ public:
     virtual int read(unsigned char* b, int len);
 
     /**
-     * Writes len of bytes into the stream.
+     * Reads len of bytes from the stream.
      * 
      * @param b
      * @param off
