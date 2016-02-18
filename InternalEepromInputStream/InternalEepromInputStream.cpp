@@ -49,3 +49,9 @@ int InternalEepromInputStream::read(unsigned char* b, int off, int len) {
 void InternalEepromInputStream::reset() {
     pos = markpos;
 }
+
+void InternalEepromInputStream::seek(unsigned int pos) {
+    if (pos < eepromSize) {
+        this->pos = pos;
+    }
+}
