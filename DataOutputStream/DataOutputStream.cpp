@@ -46,8 +46,7 @@ void DataOutputStream::writeUnsignedChar(unsigned char c) {
 }
 
 void DataOutputStream::writeInt(int v) {
-    outputStream->write((unsigned char) ((v >> 8) & 0xff));
-    outputStream->write((unsigned char) (v & 0xff));
+    writeBytes((unsigned char *) &v, sizeof(int));
 }
 
 void DataOutputStream::writeUnsignedInt(unsigned int v) {
@@ -59,10 +58,7 @@ void DataOutputStream::writeWord(word v) {
 }
 
 void DataOutputStream::writeLong(long v) {
-    outputStream->write((unsigned char) ((v >> 24) & 0xff));
-    outputStream->write((unsigned char) ((v >> 16) & 0xff));
-    outputStream->write((unsigned char) ((v >> 8) & 0xff));
-    outputStream->write((unsigned char) (v & 0xff));
+    writeBytes((unsigned char *) &v, sizeof(long));
 }
 
 void DataOutputStream::writeUnsignedLong(unsigned long v) {
@@ -70,11 +66,11 @@ void DataOutputStream::writeUnsignedLong(unsigned long v) {
 }
 
 void DataOutputStream::writeFloat(float v) {
-    writeLong((long) v);
+    writeBytes((unsigned char *) &v, sizeof(float));
 }
 
 void DataOutputStream::writeDouble(double v) {
-    writeLong((long) v);
+    writeBytes((unsigned char *) &v, sizeof(double));
 }
 
 #endif /* __ARDUINO_IO_DATA_OUTPUT_STREAM_CPP__ */

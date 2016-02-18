@@ -33,9 +33,7 @@ unsigned char DataInputStream::readUnsignedChar() {
 
 int DataInputStream::readInt() {
     int v = 0;
-    v = inputStream->read();
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
+    readFully((unsigned char *) &v, sizeof(int));
     return v;
 }
 
@@ -49,13 +47,7 @@ word DataInputStream::readWord() {
 
 long DataInputStream::readLong() {
     long v = 0;
-    v = inputStream->read();
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
+    readFully((unsigned char *) &v, sizeof(long));
     return v;
 }
 
@@ -64,7 +56,9 @@ unsigned long DataInputStream::readUnsignedLong() {
 }
 
 float DataInputStream::readFloat() {
-    return (float) readLong();
+    float v = 0;
+    readFully((unsigned char *) &v, sizeof(float));
+    return v;
 }
 
 double DataInputStream::readDouble() {
