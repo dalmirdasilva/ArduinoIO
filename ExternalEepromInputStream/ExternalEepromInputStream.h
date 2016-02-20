@@ -10,10 +10,10 @@
 #ifndef __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__
 #define __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ 1
 
-#include <InputStream.h>
+#include <SeekableInputStream.h>
 #include <ExternalEeprom.h>
 
-class ExternalEepromInputStream: public virtual InputStream {
+class ExternalEepromInputStream: public virtual SeekableInputStream {
 
 protected:
 
@@ -52,12 +52,6 @@ public:
     ExternalEepromInputStream(ExternalEeprom* externalEeprom);
 
     /**
-     * Virtual destructor.
-     */
-    virtual ~ExternalEepromInputStream() {
-    }
-
-    /**
      * Returns the number of bytes that can be read(or skipped over) from this 
      * input stream without blocking by the next caller of a method for this 
      * input stream.
@@ -65,18 +59,6 @@ public:
      * @return int      The available number of bytes.
      */
     virtual int available();
-
-    /**
-     * Marks the current position in this input stream.
-     */
-    virtual void mark();
-
-    /**
-     * Tests if this input stream supports the mark and reset methods.
-     * 
-     * @return bool
-     */
-    virtual bool markSupported();
 
     /**
      * Using the parent read.
@@ -101,10 +83,29 @@ public:
     virtual int read(unsigned char* b, int off, int len);
 
     /**
+     * Marks the current position in this input stream.
+     */
+    virtual void mark();
+
+    /**
+     * Tests if this input stream supports the mark and reset methods.
+     *
+     * @return bool
+     */
+    virtual bool markSupported();
+
+    /**
      * Repositions this stream to the position at the time the mark method was 
      * last called on this input stream.
      */
     virtual void reset();
+
+    /**
+     * Seeks to the desired position.
+     *
+     * @param pos The position we want to point to.
+     */
+    virtual void seek(unsigned int pos);
 };
 
 #endif /* __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ */

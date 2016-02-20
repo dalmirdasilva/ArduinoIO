@@ -53,18 +53,6 @@ public:
     virtual int available();
 
     /**
-     * Marks the current position in this input stream.
-     */
-    virtual void mark();
-
-    /**
-     * Tests if this input stream supports the mark and reset methods.
-     * 
-     * @return bool
-     */
-    virtual bool markSupported();
-
-    /**
      * Using the parent read.
      */
     using InputStream::read;
@@ -85,6 +73,18 @@ public:
      * @return 
      */
     virtual int read(unsigned char* b, int off, int len);
+
+    /**
+     * Marks the current position in this input stream.
+     */
+    virtual void mark();
+
+    /**
+     * Tests if this input stream supports the mark and reset methods.
+     *
+     * @return bool
+     */
+    virtual bool markSupported();
 
     /**
      * Repositions this stream to the position at the time the mark method was 

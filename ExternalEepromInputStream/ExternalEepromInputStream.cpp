@@ -21,14 +21,6 @@ int ExternalEepromInputStream::available() {
     return room;
 }
 
-void ExternalEepromInputStream::mark() {
-    markpos = pos;
-}
-
-bool ExternalEepromInputStream::markSupported() {
-    return true;
-}
-
 int ExternalEepromInputStream::read() {
     if (pos >= externalEepromSize) {
         return -1;
@@ -45,6 +37,20 @@ int ExternalEepromInputStream::read(unsigned char* b, int off, int len) {
     return total;
 }
 
+void ExternalEepromInputStream::mark() {
+    markpos = pos;
+}
+
+bool ExternalEepromInputStream::markSupported() {
+    return true;
+}
+
 void ExternalEepromInputStream::reset() {
     pos = markpos;
+}
+
+void ExternalEepromInputStream::seek(unsigned int pos) {
+    if (pos < externalEepromSize) {
+        this->pos = pos;
+    }
 }

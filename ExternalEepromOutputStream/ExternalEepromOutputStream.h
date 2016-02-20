@@ -10,10 +10,10 @@
 #ifndef __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__
 #define __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ 1
 
-#include <OutputStream.h>
+#include <SeekableOutputStream.h>
 #include <ExternalEeprom.h>
 
-class ExternalEepromOutputStream : public OutputStream {
+class ExternalEepromOutputStream : public SeekableOutputStream {
 
     /**
      * The associated eeprom.
@@ -25,6 +25,16 @@ class ExternalEepromOutputStream : public OutputStream {
      */
     unsigned int pos;
 
+    /**
+     * The currently marked position in the stream.
+     */
+    unsigned int markpos;
+
+    /*
+     * The size of the externalEeprom.
+     */
+    unsigned int externalEepromSize;
+
 public:
 
     /**
@@ -33,9 +43,6 @@ public:
      * @param externalEeprom
      */
     ExternalEepromOutputStream(ExternalEeprom* externalEeprom);
-
-    virtual ~ExternalEepromOutputStream() {
-    }
 
     /**
      * Using parent write.
@@ -58,6 +65,29 @@ public:
      * @param len
      */
     virtual void write(unsigned char* b, int off, int len);
+
+    /**
+     * Seeks to the desired position.
+     *
+     * @param pos The position we want to point to.
+     */
+    virtual void seek(unsigned int pos);
+
+    /**
+     * Marks the current position in this output stream.
+     */
+    virtual void mark();
+
+    /**
+     * Tests if this output stream supports the mark and reset methods.
+     */
+    virtual bool markSupported();
+
+    /**
+     * Repositions this stream to the position at the time the mark method was
+     * last called on this output stream.
+     */
+    virtual void reset();
 };
 
 #endif /* __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ */
