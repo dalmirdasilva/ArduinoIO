@@ -10,9 +10,9 @@
 #ifndef __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__
 #define __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ 1
 
-#include <OutputStream.h>
+#include <SeekableOutputStream.h>
 
-class ByteArrayOutputStream: public OutputStream {
+class ByteArrayOutputStream: public SeekableOutputStream {
 
 protected:
 
@@ -31,6 +31,11 @@ protected:
      */
     unsigned int pos;
 
+    /**
+     * The currently marked position in the stream.
+     */
+    unsigned int markpos;
+
 public:
 
     /**
@@ -46,11 +51,6 @@ public:
      */
     virtual ~ByteArrayOutputStream() {
     }
-
-    /**
-     * Resets the count field of this unsigned char array output stream to zero.
-     */
-    void reset();
 
     /**
      * Returns the current size of the buffer.
@@ -77,6 +77,31 @@ public:
      * @param b The unsigned char to be written.
      */
     virtual void write(unsigned char b);
+
+    /**
+     * Marks the current position in this input stream.
+     */
+    virtual void mark();
+
+    /**
+     * Tests if this input stream supports the mark and reset methods.
+     *
+     * @return bool
+     */
+    virtual bool markSupported();
+
+    /**
+     * Repositions this stream to the position at the time the mark method was
+     * last called on this input stream.
+     */
+    virtual void reset();
+
+    /**
+     * Seeks to the desired position.
+     *
+     * @param pos The position we want to point to.
+     */
+    virtual void seek(unsigned int pos);
 };
 
 #endif /* __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ */

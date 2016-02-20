@@ -55,6 +55,22 @@ public:
      * @param len
      */
     virtual void write(unsigned char* b, int off, int len);
+
+    /**
+     * Marks the current position in this output stream.
+     */
+    virtual void mark();
+
+    /**
+     * Tests if this output stream supports the mark and reset methods.
+     */
+    virtual bool markSupported();
+
+    /**
+     * Repositions this stream to the position at the time the mark method was
+     * last called on this output stream.
+     */
+    virtual void reset();
 };
 
 #endif /* __ARDUINO_IO_OUTPUT_STREAM_H__ */

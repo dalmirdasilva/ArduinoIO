@@ -14,7 +14,7 @@
 #include <avr/eeprom.h>
 
 InternalEepromOutputStream::InternalEepromOutputStream() :
-        pos(0), eepromSize(E2END) {
+        pos(0), markpos(0), eepromSize(E2END) {
 }
 
 void InternalEepromOutputStream::write(unsigned char b) {
@@ -36,6 +36,18 @@ void InternalEepromOutputStream::seek(unsigned int pos) {
     if (pos < eepromSize) {
         this->pos = pos;
     }
+}
+
+void InternalEepromOutputStream::mark() {
+    markpos = pos;
+}
+
+bool InternalEepromOutputStream::markSupported() {
+    return true;
+}
+
+void InternalEepromOutputStream::reset() {
+    pos = markpos;
 }
 
 #endif /* __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ */

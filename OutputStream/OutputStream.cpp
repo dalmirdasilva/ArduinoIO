@@ -34,4 +34,14 @@ void OutputStream::flush() {
 void OutputStream::close() {
 }
 
+void OutputStream::mark() {
+}
+
+bool OutputStream::markSupported() {
+    return false;
+}
+
+void OutputStream::reset() {
+}
+
 #endif /* __ARDUINO_IO_OUTPUT_STREAM_CPP__ */
