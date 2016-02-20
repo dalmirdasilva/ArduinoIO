@@ -10,9 +10,9 @@
 #ifndef __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__
 #define __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__ 1
 
-#include <InputStream.h>
+#include <SeekableInputStream.h>
 
-class ByteArrayInputStream : public virtual InputStream {
+class ByteArrayInputStream : public virtual SeekableInputStream {
 
 protected:
 
@@ -83,6 +83,13 @@ public:
      * last called on this input stream.
      */
     virtual void reset();
+
+    /**
+     * Seeks to the desired position.
+     *
+     * @param pos The position we want to point to.
+     */
+    virtual void seek(unsigned int pos);
 };
 
 #endif /* __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__ */

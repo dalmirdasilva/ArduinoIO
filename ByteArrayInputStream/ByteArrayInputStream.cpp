@@ -45,4 +45,10 @@ void ByteArrayInputStream::reset() {
     pos = markpos;
 }
 
+void ByteArrayInputStream::seek(unsigned int pos) {
+    if (pos < count) {
+        this->pos = pos;
+    }
+}
+
 #endif /* __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_CPP__ */
