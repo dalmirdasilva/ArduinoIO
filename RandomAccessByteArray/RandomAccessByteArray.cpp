@@ -60,8 +60,7 @@ void RandomAccessByteArray::writeUnsignedChar(unsigned char c) {
 }
 
 void RandomAccessByteArray::writeInt(int v) {
-    buf[pos++] = (unsigned char) ((v >> 8) & 0xff);
-    buf[pos++] = (unsigned char) (v & 0xff);
+    writeBytes((unsigned char *) &v, sizeof(int));
 }
 
 void RandomAccessByteArray::writeUnsignedInt(unsigned int v) {
@@ -73,10 +72,7 @@ void RandomAccessByteArray::writeWord(word v) {
 }
 
 void RandomAccessByteArray::writeLong(long v) {
-    buf[pos++] = (unsigned char) ((v >> 24) & 0xff);
-    buf[pos++] = (unsigned char) ((v >> 16) & 0xff);
-    buf[pos++] = (unsigned char) ((v >> 8) & 0xff);
-    buf[pos++] = (unsigned char) (v & 0xff);
+    writeBytes((unsigned char *) &v, sizeof(long));
 }
 
 void RandomAccessByteArray::writeUnsignedLong(unsigned long v) {
@@ -109,9 +105,7 @@ unsigned char RandomAccessByteArray::readUnsignedChar() {
 
 int RandomAccessByteArray::readInt() {
     int v = 0;
-    v = buf[pos++];
-    v <<= 8;
-    v |= buf[pos++];
+    readFully((unsigned char *) &v, sizeof(int));
     return v;
 }
 
@@ -125,13 +119,7 @@ word RandomAccessByteArray::readWord() {
 
 long RandomAccessByteArray::readLong() {
     long v = 0;
-    v = (buf[pos++] & 0xff);
-    v <<= 8;
-    v |= (buf[pos++] & 0xff);
-    v <<= 8;
-    v |= (buf[pos++] & 0xff);
-    v <<= 8;
-    v |= (buf[pos++] & 0xff);
+    readFully((unsigned char *) &v, sizeof(long));
     return v;
 }
 
