@@ -42,6 +42,16 @@ public:
      * Reads the next unsigned char of data from the input stream.
      */
     virtual int read();
+
+    /**
+     * Reads len of bytes from the stream.
+     *
+     * @param b
+     * @param off
+     * @param len
+     * @return
+     */
+    virtual int read(unsigned char* b, int off, int len);
 };
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__ */

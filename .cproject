@@ -90,6 +90,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoDevice/EepromBasedWiredDevice}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoDevice/RegisterBasedWiredDevice}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoDevice/WiredDevice}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ArduinoGsmDriver/Gprs}&quot;"/>
 								</option>
 								<inputType id="de.innot.avreclipse.cppcompiler.input.1791913115" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
@@ -124,4 +125,5 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

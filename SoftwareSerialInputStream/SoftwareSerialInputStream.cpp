@@ -16,11 +16,15 @@ SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *softwareSer
 }
 
 int SoftwareSerialInputStream::available() {
-    softwareSerial->available();
+    return softwareSerial->available();
 }
 
 int SoftwareSerialInputStream::read() {
     return softwareSerial->read();
+}
+
+int SoftwareSerialInputStream::read(unsigned char* b, int off, int len) {
+    return softwareSerial->readBytes(&b[off], len);
 }
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_CPP__ */

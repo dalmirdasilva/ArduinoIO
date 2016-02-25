@@ -19,4 +19,8 @@ void SoftwareSerialOutputStream::write(unsigned char b) {
     softwareSerial->write(b);
 }
 
+void SoftwareSerialOutputStream::write(unsigned char* b, int off, int len) {
+    softwareSerial->write(&b[off], len);
+}
+
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_OUTPUT_STREAM_CPP__ */

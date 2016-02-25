@@ -30,6 +30,16 @@ public:
      * Writes the specified unsigned char to this output stream.
      */
     virtual void write(unsigned char b);
+
+    /**
+     * Writes len bytes from the specified unsigned char array starting at offset off to
+     * this output stream.
+     *
+     * @param b
+     * @param off
+     * @param len
+     */
+    virtual void write(unsigned char* b, int off, int len);
 };
 
 #endif /* __ARDUINO_IO_SOFTWARE_SERIAL_OUTPUT_STREAM_H__ */
