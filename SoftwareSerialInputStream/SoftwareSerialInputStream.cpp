@@ -11,10 +11,8 @@
 
 #include "SoftwareSerialInputStream.h"
 
-SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *softwareSerial,
-        unsigned int boudRate) :
+SoftwareSerialInputStream::SoftwareSerialInputStream(SoftwareSerial *softwareSerial) :
         softwareSerial(softwareSerial) {
-    softwareSerial->begin(boudRate);
 }
 
 int SoftwareSerialInputStream::available() {

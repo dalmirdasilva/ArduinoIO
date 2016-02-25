@@ -30,7 +30,7 @@ public:
      * @param serial
      * @param boudRate
      */
-    SoftwareSerialInputStream(SoftwareSerial *softwareSerial, unsigned int boudRate);
+    SoftwareSerialInputStream(SoftwareSerial *softwareSerial);
 
     /**
      * Returns the number of bytes that can be read(or skipped over) from this 

@@ -11,10 +11,8 @@
 
 #include "SoftwareSerialOutputStream.h"
 
-SoftwareSerialOutputStream::SoftwareSerialOutputStream(SoftwareSerial *serial,
-        unsigned int boudRate) :
-        softwareSerial(serial) {
-    serial->begin(boudRate);
+SoftwareSerialOutputStream::SoftwareSerialOutputStream(SoftwareSerial *softwareSerial) :
+        softwareSerial(softwareSerial) {
 }
 
 void SoftwareSerialOutputStream::write(unsigned char b) {

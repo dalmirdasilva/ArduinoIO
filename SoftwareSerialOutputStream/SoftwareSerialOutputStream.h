@@ -24,7 +24,7 @@ protected:
 
 public:
 
-    SoftwareSerialOutputStream(SoftwareSerial *serial, unsigned int boudRate);
+    SoftwareSerialOutputStream(SoftwareSerial *softwareSerial);
 
     /**
      * Writes the specified unsigned char to this output stream.

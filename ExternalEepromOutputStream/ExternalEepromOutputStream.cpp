@@ -12,7 +12,7 @@
 #include "ExternalEepromOutputStream.h"
 
 ExternalEepromOutputStream::ExternalEepromOutputStream(ExternalEeprom* externalEeprom)
-        : pos(0), externalEeprom(externalEeprom), externalEepromSize(externalEeprom->getDeviceSize()) {
+        : externalEeprom(externalEeprom), pos(0), markpos(0), externalEepromSize(externalEeprom->getDeviceSize()) {
 }
 
 void ExternalEepromOutputStream::write(unsigned char b) {
