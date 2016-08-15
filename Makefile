@@ -3,17 +3,16 @@ LIB_LIST=BufferedInputStream \
 	DataOutput \
 	FilterInputStream \
 	RandomAccessExternalEeprom \
+	RandomAccessInternalEeprom \
 	BufferedOutputStream \
 	DataOutputStream \
 	FilterOutputStream \
 	RandomAccessResource \
 	ByteArrayInputStream \
 	InputStream \
-	ResourceInputStream \
 	ByteArrayOutputStream \
 	ResourceOutputStream \
-	ByteArraySeekableInputStream \
-	ResourceSeekableInputStream \
+	ResourceInputStream \
 	Closeable \
 	ExternalEepromInputStream \
 	OutputStream \
@@ -23,7 +22,6 @@ LIB_LIST=BufferedInputStream \
 	RandomAccess \
 	SeekableInputStream \
 	DataInputStream \
-	ExternalEepromSeekableInputStream \
 	RandomAccessByteArray \
 	SerialInputStream \
 	SoftwareSerialInputStream \
