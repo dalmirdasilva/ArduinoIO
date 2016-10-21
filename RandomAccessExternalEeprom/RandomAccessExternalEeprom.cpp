@@ -14,9 +14,8 @@
 #include <ExternalEeprom.h>
 #include "RandomAccessExternalEeprom.h"
 
-RandomAccessExternalEeprom::RandomAccessExternalEeprom(
-        ExternalEeprom* externalEeprom) :
-        externalEeprom(externalEeprom) {
+RandomAccessExternalEeprom::RandomAccessExternalEeprom(ExternalEeprom* externalEeprom)
+        : externalEeprom(externalEeprom) {
     pos = 0;
 }
 
@@ -62,8 +61,7 @@ void RandomAccessExternalEeprom::writeUnsignedChar(unsigned char c) {
 }
 
 void RandomAccessExternalEeprom::writeInt(int v) {
-    externalEeprom->write(pos++, (unsigned char) ((v >> 8) & 0xff));
-    externalEeprom->write(pos++, (unsigned char) (v & 0xff));
+    writeBytes((unsigned char *) &v, sizeof(int));
 }
 
 void RandomAccessExternalEeprom::writeUnsignedInt(unsigned int v) {
@@ -75,10 +73,7 @@ void RandomAccessExternalEeprom::writeWord(word v) {
 }
 
 void RandomAccessExternalEeprom::writeLong(long v) {
-    externalEeprom->write(pos++, (unsigned char) ((v >> 24) & 0xff));
-    externalEeprom->write(pos++, (unsigned char) ((v >> 16) & 0xff));
-    externalEeprom->write(pos++, (unsigned char) ((v >> 8) & 0xff));
-    externalEeprom->write(pos++, (unsigned char) (v & 0xff));
+    writeBytes((unsigned char *) &v, sizeof(long));
 }
 
 void RandomAccessExternalEeprom::writeUnsignedLong(unsigned long v) {
@@ -111,9 +106,7 @@ unsigned char RandomAccessExternalEeprom::readUnsignedChar() {
 
 int RandomAccessExternalEeprom::readInt() {
     int v = 0;
-    v = externalEeprom->read(pos++);
-    v <<= 8;
-    v |= (externalEeprom->read(pos++) & 0xff);
+    readFully((unsigned char*) &v, sizeof(int));
     return v;
 }
 
@@ -127,13 +120,7 @@ word RandomAccessExternalEeprom::readWord() {
 
 long RandomAccessExternalEeprom::readLong() {
     long v = 0;
-    v = externalEeprom->read(pos++);
-    v <<= 8;
-    v |= (externalEeprom->read(pos++) & 0xff);
-    v <<= 8;
-    v |= (externalEeprom->read(pos++) & 0xff);
-    v <<= 8;
-    v |= (externalEeprom->read(pos++) & 0xff);
+    readFully((unsigned char*) &v, sizeof(long));
     return v;
 }
 
@@ -150,9 +137,12 @@ double RandomAccessExternalEeprom::readDouble() {
 }
 
 void RandomAccessExternalEeprom::readFully(unsigned char* b, int len) {
-    for (int i = 0; i < len; i++) {
-        b[i] = externalEeprom->read(pos++);
+    int avalilable = length() - pos;
+    if (len > avalilable) {
+        len = avalilable;
     }
+    externalEeprom->readBytes(pos, b, len);
+    pos += len;
 }
 
 unsigned int RandomAccessExternalEeprom::skipBytes(unsigned int n) {

@@ -16,7 +16,7 @@
 #include <Closeable.h>
 #include <ExternalEeprom.h>
 
-class RandomAccessExternalEeprom : public RandomAccess, public virtual Closeable {
+class RandomAccessExternalEeprom: public RandomAccess, public virtual Closeable {
 
     /**
      * The external eeprom to be used.
